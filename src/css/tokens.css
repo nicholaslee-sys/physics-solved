@@ -1,0 +1,52 @@
+/* Physics Solved — design tokens ("clean light academic").
+ * Scoped to .ps-root so nothing leaks into the Squarespace theme.
+ * Fonts: Inter (UI) + JetBrains Mono (equations, values, constants).
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+.ps-root {
+  /* Color */
+  --ps-bg: #fafaf8;
+  --ps-surface: #ffffff;
+  --ps-ink: #101426;
+  --ps-muted: #5a6072;
+  --ps-accent: #2547d0;
+  --ps-accent-hover: #1c38a8;
+  --ps-success: #1a7f4e;
+  --ps-border: #e5e7ee;
+
+  /* Shape */
+  --ps-radius: 10px;
+  --ps-radius-sm: 7px;
+  --ps-shadow: 0 1px 3px rgb(16 20 38 / .08);
+  --ps-shadow-md: 0 6px 20px rgb(16 20 38 / .10);
+
+  /* Type scale — 13 / 15 / 17 / 22 / 28 / 36 */
+  --ps-fs-xs: 13px;
+  --ps-fs-sm: 15px;
+  --ps-fs-md: 17px;
+  --ps-fs-lg: 22px;
+  --ps-fs-xl: 28px;
+  --ps-fs-2xl: 36px;
+
+  /* Spacing — 4 / 8 / 12 / 16 / 24 / 32 / 48 */
+  --ps-s1: 4px;
+  --ps-s2: 8px;
+  --ps-s3: 12px;
+  --ps-s4: 16px;
+  --ps-s5: 24px;
+  --ps-s6: 32px;
+  --ps-s7: 48px;
+
+  /* Fonts */
+  --ps-font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --ps-font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", "Menlo", "Consolas", monospace;
+
+  /* Base */
+  color: var(--ps-ink);
+  font-family: var(--ps-font-ui);
+  font-size: var(--ps-fs-sm);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

@@ -1,0 +1,54 @@
+/* Physics Solved — print styles for formula sheets.
+ * Applies both to the dedicated print popup (opened by "Print / Save PDF")
+ * and to a direct browser print of the page. Sheets go black-on-white,
+ * two compact columns, with category cards kept whole across page breaks.
+ * Still fully scoped under .ps-root — no body/html rules.
+ */
+@media print {
+  .ps-root {
+    --ps-ink: #000;
+    --ps-muted: #333;
+    --ps-border: #999;
+    background: #fff;
+    color: #000;
+  }
+
+  /* Hide all interactive chrome when printing. */
+  .ps-tabs,
+  .ps-pills,
+  .ps-btn,
+  .ps-segment,
+  .ps-carousel-arrow,
+  .ps-portfolio-toggle,
+  .ps-frq-controls,
+  .ps-sim--dark { display: none !important; }
+
+  .ps-tabpanel { padding-top: 0; }
+
+  .ps-sheet { color: #000; }
+  .ps-sheet-title { font-size: 20px; }
+  .ps-sheet-tagline { color: #333; }
+
+  .ps-constants { background: transparent; border: 1px solid #999; }
+  .ps-constant { background: transparent; border: 1px solid #bbb; }
+  .ps-constant-sym { color: #000; }
+
+  .ps-sheet-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .ps-sheet-card {
+    background: transparent;
+    border: 1px solid #000;
+    box-shadow: none;
+    padding: 10px 12px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .ps-sheet-cat { border-bottom: 1px solid #000; }
+  .ps-sheet-row-name { color: #222; }
+
+  /* The dedicated print popup wraps the sheet in .ps-print-doc. */
+  .ps-print-doc { max-width: none; padding: 0; }
+  .ps-print-body { margin: 0; }
+}
