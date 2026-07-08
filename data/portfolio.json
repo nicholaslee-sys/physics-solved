@@ -1,0 +1,50 @@
+{
+  "_note": "PLACEHOLDER projects — edit freely. tags may include any of: 'engineering', 'coding', 'physics-tools'. featured:true renders the card larger. images is an array of URLs (leave [] to use a generated gradient cover).",
+  "intro": "Engineering and software projects — plus the physics study tools that power this site.",
+  "projects": [
+    {
+      "id": "proj-cansat",
+      "title": "CanSat Telemetry System",
+      "tags": ["engineering", "coding"],
+      "year": 2025,
+      "summary": "A soda-can-sized satellite that logs altitude, pressure, and temperature during descent and radios live telemetry to a ground station.",
+      "description": "Designed and built the avionics stack for a CanSat competition entry. A microcontroller samples a barometric pressure sensor and IMU at 10 Hz, timestamps each reading, and transmits packets over a 433 MHz radio link. A Python ground-station dashboard plots altitude and vertical speed in real time and writes a CSV flight log. Recovered clean descent-rate data across three test drops. (Replace this description with your own project write-up.)",
+      "tech": ["C++", "Arduino", "Python", "matplotlib", "KiCad"],
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/USER/cansat" },
+        { "label": "Write-up", "url": "#" }
+      ],
+      "images": [],
+      "featured": true
+    },
+    {
+      "id": "proj-physics-solved",
+      "title": "Physics Solved Study Tools",
+      "tags": ["coding", "physics-tools"],
+      "year": 2026,
+      "summary": "The data-driven front-end bundle behind physicssolved.com — equation finder, formula library, FRQ practice, and simulators, all configured from JSON.",
+      "description": "A vanilla-JS component library that mounts interactive study tools onto a Squarespace site from a shared CDN bundle. New courses, formula sheets, and questions are added by editing JSON — no JavaScript changes. Fully scoped CSS, WCAG AA contrast, keyboard and screen-reader support, and a print-optimized formula-sheet mode. (This is a real project on this site — keep or replace as you like.)",
+      "tech": ["JavaScript (ES2020)", "CSS", "esbuild", "jsDelivr"],
+      "links": [
+        { "label": "Live site", "url": "https://physicssolved.com" },
+        { "label": "GitHub", "url": "https://github.com/USER/physics-solved" }
+      ],
+      "images": [],
+      "featured": true
+    },
+    {
+      "id": "proj-motor-dyno",
+      "title": "Brushless Motor Test Bench",
+      "tags": ["engineering"],
+      "year": 2024,
+      "summary": "A benchtop dynamometer that measures thrust, current, and RPM for small BLDC motors to characterize propeller efficiency.",
+      "description": "Built a load-cell test stand to compare motor/propeller combinations for a drone project. A Hall-effect sensor reads RPM, an INA219 measures current and voltage, and a load cell reads thrust; an Arduino streams the data to a laptop for plotting thrust-vs-power curves. Used the results to pick a combo that improved hover efficiency by roughly 15%. (Replace with your own numbers and details.)",
+      "tech": ["Arduino", "Load cell + HX711", "Python", "Fusion 360"],
+      "links": [
+        { "label": "GitHub", "url": "https://github.com/USER/motor-dyno" }
+      ],
+      "images": [],
+      "featured": false
+    }
+  ]
+}

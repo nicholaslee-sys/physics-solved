@@ -1,0 +1,111 @@
+{
+  "_comment": "Single source of truth. Carousel cards, formula-library tabs, and FRQ filters all render from this file so they can never disagree. Edit JSON only — never JS. status: 'live' | 'coming-soon'. accent drives badge color (must stay dark enough for AA text on white).",
+  "subjects": [
+    {
+      "id": "physics",
+      "label": "Physics",
+      "courses": [
+        {
+          "id": "ap-physics-1",
+          "label": "AP Physics 1",
+          "eyebrow": "Mechanics",
+          "blurb": "Kinematics, dynamics, energy, momentum, rotation, and waves.",
+          "url": "/ap-physics-1",
+          "status": "live",
+          "accent": "#2547d0",
+          "image": null,
+          "features": ["equation-finder", "sheet", "frq", "simulator"],
+          "sheets": [
+            { "id": "ap-physics-1", "label": "AP Physics 1", "file": "sheets/ap-physics-1.json" }
+          ]
+        },
+        {
+          "id": "ap-physics-2",
+          "label": "AP Physics 2",
+          "eyebrow": "Fluids · Thermo · E&M",
+          "blurb": "Fluids, thermodynamics, electrostatics, circuits, magnetism, optics, and modern physics.",
+          "url": "/ap-physics-2",
+          "status": "live",
+          "accent": "#1a7f4e",
+          "image": null,
+          "features": ["equation-finder", "sheet", "frq"],
+          "sheets": [
+            { "id": "ap-physics-2", "label": "AP Physics 2", "file": "sheets/ap-physics-2.json" }
+          ]
+        },
+        {
+          "id": "ap-physics-c",
+          "label": "AP Physics C",
+          "eyebrow": "Calculus-based",
+          "blurb": "Calculus-based mechanics and electricity & magnetism.",
+          "url": "/ap-physics-c",
+          "status": "live",
+          "accent": "#b4530a",
+          "image": null,
+          "features": ["equation-finder", "sheet", "frq"],
+          "sheets": [
+            { "id": "ap-physics-c-mechanics", "label": "AP Physics C · Mechanics", "file": "sheets/ap-physics-c-mechanics.json" },
+            { "id": "ap-physics-c-em", "label": "AP Physics C · E&M", "file": "sheets/ap-physics-c-em.json" }
+          ]
+        },
+        {
+          "id": "college-physics",
+          "label": "College Physics",
+          "eyebrow": "Algebra-based",
+          "blurb": "Introductory algebra-based mechanics and electricity & magnetism.",
+          "url": "/college-physics",
+          "status": "live",
+          "accent": "#5a3fb8",
+          "image": null,
+          "features": ["equation-finder", "sheet"],
+          "sheets": [
+            { "id": "college-mechanics", "label": "College · Mechanics", "file": "sheets/college-mechanics.json" },
+            { "id": "college-em", "label": "College · E&M", "file": "sheets/college-em.json" }
+          ]
+        },
+        {
+          "id": "ib-physics",
+          "label": "IB Physics",
+          "eyebrow": "HL + SL",
+          "blurb": "International Baccalaureate physics for Higher and Standard Level.",
+          "url": "/ib-physics",
+          "status": "live",
+          "accent": "#0b6b93",
+          "image": null,
+          "features": ["equation-finder", "sheet"],
+          "sheets": [
+            { "id": "ib-physics", "label": "IB Physics", "file": "sheets/ib-physics.json" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "label": "Chemistry",
+      "courses": [
+        {
+          "id": "ap-chemistry",
+          "label": "AP Chemistry",
+          "eyebrow": "Coming soon",
+          "blurb": "Atomic structure, bonding, kinetics, equilibrium, thermodynamics, and electrochemistry.",
+          "url": null,
+          "status": "coming-soon",
+          "accent": "#8a5a1b",
+          "image": null,
+          "features": []
+        },
+        {
+          "id": "ib-chemistry",
+          "label": "IB Chemistry",
+          "eyebrow": "Coming soon",
+          "blurb": "International Baccalaureate chemistry for Higher and Standard Level.",
+          "url": null,
+          "status": "coming-soon",
+          "accent": "#6b7280",
+          "image": null,
+          "features": []
+        }
+      ]
+    }
+  ]
+}
