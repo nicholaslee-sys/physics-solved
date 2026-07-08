@@ -1,0 +1,68 @@
+{
+  "course": "college-physics",
+  "note": "Standard introductory algebra-based college physics equations. Mechanics and E&M starter units are real; expand as needed.",
+  "units": [
+    {
+      "title": "Mechanics — Kinematics",
+      "variables": [
+        { "sym": "x", "name": "position" },
+        { "sym": "x₀", "name": "initial position" },
+        { "sym": "v", "name": "final velocity" },
+        { "sym": "v₀", "name": "initial velocity" },
+        { "sym": "a", "name": "acceleration" },
+        { "sym": "t", "name": "time" }
+      ],
+      "equations": [
+        { "name": "Velocity", "expr": "v = v₀ + a·t", "uses": ["v", "v₀", "a", "t"] },
+        { "name": "Position", "expr": "x = x₀ + v₀·t + ½·a·t²", "uses": ["x", "x₀", "v₀", "t", "a"] },
+        { "name": "Velocity² (no time)", "expr": "v² = v₀² + 2·a·(x − x₀)", "uses": ["v", "v₀", "a", "x", "x₀"] }
+      ]
+    },
+    {
+      "title": "Mechanics — Forces & Energy",
+      "variables": [
+        { "sym": "F", "name": "force" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "a", "name": "acceleration" },
+        { "sym": "W", "name": "work" },
+        { "sym": "d", "name": "displacement" },
+        { "sym": "θ", "name": "angle between F and d" },
+        { "sym": "K", "name": "kinetic energy" },
+        { "sym": "v", "name": "speed" }
+      ],
+      "equations": [
+        { "name": "Newton's second law", "expr": "F = m·a", "uses": ["F", "m", "a"] },
+        { "name": "Work", "expr": "W = F·d·cos θ", "uses": ["W", "F", "d", "θ"] },
+        { "name": "Kinetic energy", "expr": "K = ½·m·v²", "uses": ["K", "m", "v"] }
+      ]
+    },
+    {
+      "title": "E&M — Electrostatics & Circuits",
+      "variables": [
+        { "sym": "F", "name": "electric force" },
+        { "sym": "k", "name": "Coulomb constant" },
+        { "sym": "q₁", "name": "charge 1" },
+        { "sym": "q₂", "name": "charge 2" },
+        { "sym": "r", "name": "separation" },
+        { "sym": "V", "name": "voltage" },
+        { "sym": "I", "name": "current" },
+        { "sym": "R", "name": "resistance" },
+        { "sym": "P", "name": "power" }
+      ],
+      "equations": [
+        { "name": "Coulomb's law", "expr": "F = k·q₁·q₂ / r²", "uses": ["F", "k", "q₁", "q₂", "r"] },
+        { "name": "Ohm's law", "expr": "V = I·R", "uses": ["V", "I", "R"] },
+        { "name": "Electric power", "expr": "P = I·V", "uses": ["P", "I", "V"] }
+      ]
+    },
+    {
+      "title": "More units (PLACEHOLDER — replace with your content)",
+      "variables": [
+        { "sym": "?", "name": "Add Momentum, Rotation, Fluids, Thermodynamics, Waves, Magnetism, and Optics." }
+      ],
+      "equations": [
+        { "name": "Placeholder", "expr": "Copy the structure of the units above.", "uses": ["?"] }
+      ]
+    }
+  ]
+}

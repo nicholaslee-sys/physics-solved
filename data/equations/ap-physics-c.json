@@ -1,0 +1,70 @@
+{
+  "course": "ap-physics-c",
+  "note": "Standard AP Physics C (calculus-based) equations. Mechanics and E&M starter units are real; add remaining units by copying the pattern.",
+  "units": [
+    {
+      "title": "Mechanics 1 — Kinematics (calculus)",
+      "variables": [
+        { "sym": "x", "name": "position" },
+        { "sym": "v", "name": "velocity" },
+        { "sym": "a", "name": "acceleration" },
+        { "sym": "t", "name": "time" },
+        { "sym": "v₀", "name": "initial velocity" },
+        { "sym": "x₀", "name": "initial position" }
+      ],
+      "equations": [
+        { "name": "Velocity as a derivative", "expr": "v = dx/dt", "uses": ["v", "x", "t"] },
+        { "name": "Acceleration as a derivative", "expr": "a = dv/dt", "uses": ["a", "v", "t"] },
+        { "name": "Velocity (constant a)", "expr": "v = v₀ + a·t", "uses": ["v", "v₀", "a", "t"] },
+        { "name": "Position (constant a)", "expr": "x = x₀ + v₀·t + ½·a·t²", "uses": ["x", "x₀", "v₀", "t", "a"] }
+      ]
+    },
+    {
+      "title": "Mechanics 2 — Work, Energy & Power",
+      "variables": [
+        { "sym": "W", "name": "work" },
+        { "sym": "F", "name": "force" },
+        { "sym": "x", "name": "displacement" },
+        { "sym": "K", "name": "kinetic energy" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "v", "name": "speed" },
+        { "sym": "P", "name": "power" },
+        { "sym": "t", "name": "time" }
+      ],
+      "equations": [
+        { "name": "Work (variable force)", "expr": "W = ∫ F · dx", "uses": ["W", "F", "x"] },
+        { "name": "Kinetic energy", "expr": "K = ½·m·v²", "uses": ["K", "m", "v"] },
+        { "name": "Instantaneous power", "expr": "P = dW/dt = F·v", "uses": ["P", "W", "t", "F", "v"] }
+      ]
+    },
+    {
+      "title": "E&M 1 — Electrostatics",
+      "variables": [
+        { "sym": "F_E", "name": "electric force" },
+        { "sym": "k", "name": "Coulomb constant" },
+        { "sym": "q₁", "name": "charge 1" },
+        { "sym": "q₂", "name": "charge 2" },
+        { "sym": "r", "name": "separation" },
+        { "sym": "E", "name": "electric field" },
+        { "sym": "Φ_E", "name": "electric flux" },
+        { "sym": "A", "name": "area" },
+        { "sym": "Q", "name": "enclosed charge" },
+        { "sym": "ε₀", "name": "permittivity of free space" }
+      ],
+      "equations": [
+        { "name": "Coulomb's law", "expr": "F_E = k·q₁·q₂ / r²", "uses": ["F_E", "k", "q₁", "q₂", "r"] },
+        { "name": "Electric flux", "expr": "Φ_E = ∮ E · dA", "uses": ["Φ_E", "E", "A"] },
+        { "name": "Gauss's law", "expr": "∮ E · dA = Q / ε₀", "uses": ["E", "A", "Q", "ε₀"] }
+      ]
+    },
+    {
+      "title": "More units (PLACEHOLDER — replace with your content)",
+      "variables": [
+        { "sym": "?", "name": "Add Systems of Particles/Momentum, Rotation, Oscillations, Gravitation, Conductors/Capacitors, Circuits, Magnetism, and Electromagnetism." }
+      ],
+      "equations": [
+        { "name": "Placeholder", "expr": "Copy the structure of the units above.", "uses": ["?"] }
+      ]
+    }
+  ]
+}

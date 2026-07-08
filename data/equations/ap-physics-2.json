@@ -1,0 +1,79 @@
+{
+  "course": "ap-physics-2",
+  "note": "Standard AP Physics 2 curriculum equations. The unit list below covers Fluids, Thermodynamics, and Electrostatics as real content; add the remaining units (Circuits, Magnetism, Optics, Modern) by copying the pattern.",
+  "units": [
+    {
+      "title": "Unit 1 — Fluids",
+      "variables": [
+        { "sym": "ρ", "name": "density" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "V", "name": "volume" },
+        { "sym": "P", "name": "pressure" },
+        { "sym": "P₀", "name": "surface pressure" },
+        { "sym": "F", "name": "force" },
+        { "sym": "A", "name": "area" },
+        { "sym": "g", "name": "free-fall acceleration" },
+        { "sym": "h", "name": "depth" },
+        { "sym": "F_b", "name": "buoyant force" },
+        { "sym": "v", "name": "flow speed" }
+      ],
+      "equations": [
+        { "name": "Density", "expr": "ρ = m / V", "uses": ["ρ", "m", "V"] },
+        { "name": "Pressure", "expr": "P = F / A", "uses": ["P", "F", "A"] },
+        { "name": "Pressure with depth", "expr": "P = P₀ + ρ·g·h", "uses": ["P", "P₀", "ρ", "g", "h"] },
+        { "name": "Buoyant force (Archimedes)", "expr": "F_b = ρ·V·g", "uses": ["F_b", "ρ", "V", "g"] },
+        { "name": "Continuity equation", "expr": "A₁·v₁ = A₂·v₂", "uses": ["A", "v"] }
+      ]
+    },
+    {
+      "title": "Unit 2 — Thermodynamics",
+      "variables": [
+        { "sym": "P", "name": "pressure" },
+        { "sym": "V", "name": "volume" },
+        { "sym": "n", "name": "moles" },
+        { "sym": "R", "name": "gas constant", "note": "8.31 J/(mol·K)" },
+        { "sym": "T", "name": "temperature (K)" },
+        { "sym": "Q", "name": "heat" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "c", "name": "specific heat" },
+        { "sym": "ΔT", "name": "temperature change" },
+        { "sym": "ΔU", "name": "change in internal energy" },
+        { "sym": "W", "name": "work done on gas" }
+      ],
+      "equations": [
+        { "name": "Ideal gas law", "expr": "P·V = n·R·T", "uses": ["P", "V", "n", "R", "T"] },
+        { "name": "Heat and temperature change", "expr": "Q = m·c·ΔT", "uses": ["Q", "m", "c", "ΔT"] },
+        { "name": "First law of thermodynamics", "expr": "ΔU = Q + W", "uses": ["ΔU", "Q", "W"] }
+      ]
+    },
+    {
+      "title": "Unit 3 — Electrostatics",
+      "variables": [
+        { "sym": "F_E", "name": "electric force" },
+        { "sym": "k", "name": "Coulomb constant", "note": "8.99×10⁹ N·m²/C²" },
+        { "sym": "q₁", "name": "charge 1" },
+        { "sym": "q₂", "name": "charge 2" },
+        { "sym": "r", "name": "separation" },
+        { "sym": "E", "name": "electric field" },
+        { "sym": "q", "name": "test charge" },
+        { "sym": "U_E", "name": "electric potential energy" },
+        { "sym": "V", "name": "electric potential" }
+      ],
+      "equations": [
+        { "name": "Coulomb's law", "expr": "F_E = k·q₁·q₂ / r²", "uses": ["F_E", "k", "q₁", "q₂", "r"] },
+        { "name": "Electric field from force", "expr": "E = F_E / q", "uses": ["E", "F_E", "q"] },
+        { "name": "Field of a point charge", "expr": "E = k·q / r²", "uses": ["E", "k", "q", "r"] },
+        { "name": "Potential of a point charge", "expr": "V = k·q / r", "uses": ["V", "k", "q", "r"] }
+      ]
+    },
+    {
+      "title": "Unit 4 — More units (PLACEHOLDER — replace with your content)",
+      "variables": [
+        { "sym": "?", "name": "Add Circuits, Magnetism, Geometric & Physical Optics, and Modern Physics variables here." }
+      ],
+      "equations": [
+        { "name": "Placeholder", "expr": "Copy the structure of the units above.", "uses": ["?"] }
+      ]
+    }
+  ]
+}

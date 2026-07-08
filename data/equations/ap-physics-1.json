@@ -1,0 +1,157 @@
+{
+  "course": "ap-physics-1",
+  "note": "Standard AP Physics 1 curriculum equations. Verify unit groupings and symbols against your syllabus, then edit freely — no JS changes needed.",
+  "units": [
+    {
+      "title": "Unit 1 — Kinematics",
+      "variables": [
+        { "sym": "x", "name": "position" },
+        { "sym": "x₀", "name": "initial position" },
+        { "sym": "Δx", "name": "displacement" },
+        { "sym": "v", "name": "final velocity" },
+        { "sym": "v₀", "name": "initial velocity" },
+        { "sym": "a", "name": "acceleration" },
+        { "sym": "t", "name": "time" },
+        { "sym": "g", "name": "free-fall acceleration", "note": "9.8 m/s² near Earth's surface" }
+      ],
+      "equations": [
+        { "name": "Velocity (no position)", "expr": "v = v₀ + a·t", "uses": ["v", "v₀", "a", "t"] },
+        { "name": "Position (no final velocity)", "expr": "Δx = v₀·t + ½·a·t²", "uses": ["Δx", "v₀", "t", "a"] },
+        { "name": "Velocity (no time)", "expr": "v² = v₀² + 2·a·Δx", "uses": ["v", "v₀", "a", "Δx"] },
+        { "name": "Displacement (average velocity)", "expr": "Δx = ½·(v₀ + v)·t", "uses": ["Δx", "v₀", "v", "t"] },
+        { "name": "Position from displacement", "expr": "x = x₀ + Δx", "uses": ["x", "x₀", "Δx"] }
+      ]
+    },
+    {
+      "title": "Unit 2 — Dynamics (Forces)",
+      "variables": [
+        { "sym": "Fₙₑₜ", "name": "net force" },
+        { "sym": "F", "name": "force" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "a", "name": "acceleration" },
+        { "sym": "g", "name": "free-fall acceleration" },
+        { "sym": "F_g", "name": "weight (gravitational force)" },
+        { "sym": "F_f", "name": "friction force" },
+        { "sym": "μ", "name": "coefficient of friction" },
+        { "sym": "N", "name": "normal force" }
+      ],
+      "equations": [
+        { "name": "Newton's second law", "expr": "F_net = m·a", "uses": ["Fₙₑₜ", "m", "a"] },
+        { "name": "Weight", "expr": "F_g = m·g", "uses": ["F_g", "m", "g"] },
+        { "name": "Friction (max)", "expr": "F_f ≤ μ·N", "uses": ["F_f", "μ", "N"] }
+      ]
+    },
+    {
+      "title": "Unit 3 — Circular Motion & Gravitation",
+      "variables": [
+        { "sym": "a_c", "name": "centripetal acceleration" },
+        { "sym": "F_c", "name": "centripetal force" },
+        { "sym": "v", "name": "speed" },
+        { "sym": "r", "name": "radius" },
+        { "sym": "T", "name": "period" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "M", "name": "central mass" },
+        { "sym": "G", "name": "gravitational constant", "note": "6.67×10⁻¹¹ N·m²/kg²" }
+      ],
+      "equations": [
+        { "name": "Centripetal acceleration", "expr": "a_c = v² / r", "uses": ["a_c", "v", "r"] },
+        { "name": "Centripetal force", "expr": "F_c = m·v² / r", "uses": ["F_c", "m", "v", "r"] },
+        { "name": "Speed from period", "expr": "v = 2π·r / T", "uses": ["v", "r", "T"] },
+        { "name": "Newton's law of gravitation", "expr": "F_g = G·M·m / r²", "uses": ["G", "M", "m", "r"] }
+      ]
+    },
+    {
+      "title": "Unit 4 — Energy",
+      "variables": [
+        { "sym": "W", "name": "work" },
+        { "sym": "F", "name": "force" },
+        { "sym": "d", "name": "displacement" },
+        { "sym": "θ", "name": "angle between F and d" },
+        { "sym": "K", "name": "kinetic energy" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "v", "name": "speed" },
+        { "sym": "U_g", "name": "gravitational potential energy" },
+        { "sym": "g", "name": "free-fall acceleration" },
+        { "sym": "h", "name": "height" },
+        { "sym": "U_s", "name": "elastic potential energy" },
+        { "sym": "k", "name": "spring constant" },
+        { "sym": "x", "name": "spring displacement" },
+        { "sym": "P", "name": "power" },
+        { "sym": "t", "name": "time" }
+      ],
+      "equations": [
+        { "name": "Work", "expr": "W = F·d·cos θ", "uses": ["W", "F", "d", "θ"] },
+        { "name": "Kinetic energy", "expr": "K = ½·m·v²", "uses": ["K", "m", "v"] },
+        { "name": "Gravitational PE", "expr": "U_g = m·g·h", "uses": ["U_g", "m", "g", "h"] },
+        { "name": "Elastic PE", "expr": "U_s = ½·k·x²", "uses": ["U_s", "k", "x"] },
+        { "name": "Average power", "expr": "P = W / t", "uses": ["P", "W", "t"] }
+      ]
+    },
+    {
+      "title": "Unit 5 — Momentum",
+      "variables": [
+        { "sym": "p", "name": "momentum" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "v", "name": "velocity" },
+        { "sym": "J", "name": "impulse" },
+        { "sym": "F", "name": "force" },
+        { "sym": "Δt", "name": "time interval" },
+        { "sym": "Δp", "name": "change in momentum" }
+      ],
+      "equations": [
+        { "name": "Momentum", "expr": "p = m·v", "uses": ["p", "m", "v"] },
+        { "name": "Impulse–momentum theorem", "expr": "J = F·Δt = Δp", "uses": ["J", "F", "Δt", "Δp"] }
+      ]
+    },
+    {
+      "title": "Unit 6 — Rotation",
+      "variables": [
+        { "sym": "τ", "name": "torque" },
+        { "sym": "r", "name": "lever arm / radius" },
+        { "sym": "F", "name": "force" },
+        { "sym": "θ", "name": "angle between r and F" },
+        { "sym": "I", "name": "moment of inertia" },
+        { "sym": "α", "name": "angular acceleration" },
+        { "sym": "ω", "name": "angular velocity" },
+        { "sym": "ω₀", "name": "initial angular velocity" },
+        { "sym": "t", "name": "time" },
+        { "sym": "L", "name": "angular momentum" }
+      ],
+      "equations": [
+        { "name": "Torque", "expr": "τ = r·F·sin θ", "uses": ["τ", "r", "F", "θ"] },
+        { "name": "Rotational Newton's 2nd law", "expr": "τ_net = I·α", "uses": ["τ", "I", "α"] },
+        { "name": "Angular velocity", "expr": "ω = ω₀ + α·t", "uses": ["ω", "ω₀", "α", "t"] },
+        { "name": "Angular momentum", "expr": "L = I·ω", "uses": ["L", "I", "ω"] }
+      ]
+    },
+    {
+      "title": "Unit 7 — Simple Harmonic Motion",
+      "variables": [
+        { "sym": "T", "name": "period" },
+        { "sym": "f", "name": "frequency" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "k", "name": "spring constant" },
+        { "sym": "L", "name": "pendulum length" },
+        { "sym": "g", "name": "free-fall acceleration" }
+      ],
+      "equations": [
+        { "name": "Period of a spring", "expr": "T = 2π·√(m / k)", "uses": ["T", "m", "k"] },
+        { "name": "Period of a pendulum", "expr": "T = 2π·√(L / g)", "uses": ["T", "L", "g"] },
+        { "name": "Period–frequency", "expr": "T = 1 / f", "uses": ["T", "f"] }
+      ]
+    },
+    {
+      "title": "Unit 8 — Waves & Sound",
+      "variables": [
+        { "sym": "v", "name": "wave speed" },
+        { "sym": "f", "name": "frequency" },
+        { "sym": "λ", "name": "wavelength" },
+        { "sym": "T", "name": "period" }
+      ],
+      "equations": [
+        { "name": "Wave speed", "expr": "v = f·λ", "uses": ["v", "f", "λ"] },
+        { "name": "Frequency–period", "expr": "f = 1 / T", "uses": ["f", "T"] }
+      ]
+    }
+  ]
+}

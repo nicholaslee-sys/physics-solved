@@ -1,0 +1,55 @@
+{
+  "course": "ib-physics",
+  "note": "Standard IB Physics equations (SL + HL). Starter units are real; expand with the remaining IB topics by copying the pattern.",
+  "units": [
+    {
+      "title": "Topic — Mechanics",
+      "variables": [
+        { "sym": "s", "name": "displacement" },
+        { "sym": "u", "name": "initial velocity" },
+        { "sym": "v", "name": "final velocity" },
+        { "sym": "a", "name": "acceleration" },
+        { "sym": "t", "name": "time" },
+        { "sym": "F", "name": "force" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "p", "name": "momentum" }
+      ],
+      "equations": [
+        { "name": "Velocity (suvat)", "expr": "v = u + a·t", "uses": ["v", "u", "a", "t"] },
+        { "name": "Displacement (suvat)", "expr": "s = u·t + ½·a·t²", "uses": ["s", "u", "t", "a"] },
+        { "name": "Velocity² (suvat)", "expr": "v² = u² + 2·a·s", "uses": ["v", "u", "a", "s"] },
+        { "name": "Newton's second law", "expr": "F = m·a", "uses": ["F", "m", "a"] },
+        { "name": "Momentum", "expr": "p = m·v", "uses": ["p", "m", "v"] }
+      ]
+    },
+    {
+      "title": "Topic — Thermal Physics",
+      "variables": [
+        { "sym": "Q", "name": "thermal energy" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "c", "name": "specific heat capacity" },
+        { "sym": "ΔT", "name": "temperature change" },
+        { "sym": "L", "name": "specific latent heat" },
+        { "sym": "P", "name": "pressure" },
+        { "sym": "V", "name": "volume" },
+        { "sym": "n", "name": "moles" },
+        { "sym": "R", "name": "gas constant" },
+        { "sym": "T", "name": "temperature (K)" }
+      ],
+      "equations": [
+        { "name": "Sensible heat", "expr": "Q = m·c·ΔT", "uses": ["Q", "m", "c", "ΔT"] },
+        { "name": "Latent heat", "expr": "Q = m·L", "uses": ["Q", "m", "L"] },
+        { "name": "Ideal gas law", "expr": "P·V = n·R·T", "uses": ["P", "V", "n", "R", "T"] }
+      ]
+    },
+    {
+      "title": "More topics (PLACEHOLDER — replace with your content)",
+      "variables": [
+        { "sym": "?", "name": "Add Waves, Electricity & Magnetism, Circular Motion & Gravitation, Atomic/Nuclear/Particle, Energy Production, and HL options." }
+      ],
+      "equations": [
+        { "name": "Placeholder", "expr": "Copy the structure of the topics above.", "uses": ["?"] }
+      ]
+    }
+  ]
+}
