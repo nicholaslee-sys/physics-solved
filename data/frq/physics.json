@@ -1,0 +1,116 @@
+{
+  "_note": "SAMPLE free-response questions with correct physics, provided so the tool renders and grades end-to-end. Replace scenario / part text / modelAnswer with your own FRQs. courseId must match a course id in registry.json (badge color is derived from the registry, not stored here).",
+  "questions": [
+    {
+      "id": "frq-1",
+      "courseId": "ap-physics-1",
+      "unit": "Kinematics",
+      "title": "Projectile launched from a cliff",
+      "scenario": "A ball is launched horizontally at 15 m/s from the top of a 20 m cliff. Ignore air resistance and take g = 9.8 m/s².",
+      "parts": [
+        { "label": "Part (a)", "text": "How long is the ball in the air before it lands?", "modelAnswer": "Vertical motion: 20 = ½·g·t² → t = √(2·20/9.8) ≈ 2.02 s.", "points": 3 },
+        { "label": "Part (b)", "text": "How far from the base of the cliff does it land?", "modelAnswer": "Horizontal range: x = v·t = 15 × 2.02 ≈ 30.3 m.", "points": 2 },
+        { "label": "Part (c)", "text": "What is the ball's speed just before impact?", "modelAnswer": "v_y = g·t = 9.8 × 2.02 ≈ 19.8 m/s. Speed = √(15² + 19.8²) ≈ 24.8 m/s.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-2",
+      "courseId": "ap-physics-1",
+      "unit": "Dynamics",
+      "title": "Block on an inclined plane",
+      "scenario": "A 4.0 kg block is released from rest on a frictionless incline angled at 30° above the horizontal.",
+      "parts": [
+        { "label": "Part (a)", "text": "Draw a free-body diagram and find the acceleration down the incline.", "modelAnswer": "Forces: weight mg down, normal force N perpendicular. a = g·sin30° = 9.8 × 0.5 = 4.9 m/s².", "points": 4 },
+        { "label": "Part (b)", "text": "If the incline is 2.0 m long, how fast is the block moving at the bottom?", "modelAnswer": "v² = 2·a·d = 2 × 4.9 × 2.0 = 19.6 → v ≈ 4.4 m/s.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-3",
+      "courseId": "ap-physics-1",
+      "unit": "Energy",
+      "title": "Spring launches a cart",
+      "scenario": "A spring (k = 800 N/m) is compressed 0.10 m and used to launch a 0.50 kg cart along a frictionless track.",
+      "parts": [
+        { "label": "Part (a)", "text": "How much elastic potential energy is stored in the compressed spring?", "modelAnswer": "U_s = ½·k·x² = ½ × 800 × 0.10² = 4.0 J.", "points": 2 },
+        { "label": "Part (b)", "text": "What is the cart's launch speed?", "modelAnswer": "Energy conservation: ½·m·v² = 4.0 → v = √(2 × 4.0 / 0.50) = 4.0 m/s.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-4",
+      "courseId": "ap-physics-1",
+      "unit": "Momentum",
+      "title": "Perfectly inelastic collision",
+      "scenario": "A 1200 kg car moving east at 20 m/s collides with a stationary 800 kg car and they lock together.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the velocity of the combined wreck immediately after the collision.", "modelAnswer": "Conserve momentum: (1200)(20) = (1200+800)·v → v = 24000/2000 = 12 m/s east.", "points": 3 },
+        { "label": "Part (b)", "text": "How much kinetic energy is lost in the collision?", "modelAnswer": "K_i = ½·1200·20² = 240000 J. K_f = ½·2000·12² = 144000 J. Lost = 96000 J (96 kJ).", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-5",
+      "courseId": "ap-physics-2",
+      "unit": "Fluids",
+      "title": "Pressure at depth in a tank",
+      "scenario": "A water tank is open to the atmosphere. Water density ρ = 1000 kg/m³ and P₀ = 1.0×10⁵ Pa.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the absolute pressure 3.0 m below the surface.", "modelAnswer": "P = P₀ + ρ·g·h = 1.0×10⁵ + 1000 × 9.8 × 3.0 = 1.29×10⁵ Pa.", "points": 3 },
+        { "label": "Part (b)", "text": "A 0.020 m² hatch sits at that depth. What net force must its hinges withstand from the water gauge pressure?", "modelAnswer": "Gauge pressure = ρ·g·h = 29400 Pa. F = P·A = 29400 × 0.020 ≈ 588 N.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-6",
+      "courseId": "ap-physics-2",
+      "unit": "Thermodynamics",
+      "title": "Heating a gas at constant volume",
+      "scenario": "2.0 mol of an ideal gas is held in a rigid container and 500 J of heat is added.",
+      "parts": [
+        { "label": "Part (a)", "text": "How much work does the gas do on its surroundings?", "modelAnswer": "Constant volume → ΔV = 0, so W = 0. The gas does no work.", "points": 2 },
+        { "label": "Part (b)", "text": "Using the first law, find the change in the gas's internal energy.", "modelAnswer": "ΔU = Q + W_on = 500 + 0 = 500 J. Internal energy increases by 500 J.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-7",
+      "courseId": "ap-physics-2",
+      "unit": "Electrostatics",
+      "title": "Force between two point charges",
+      "scenario": "Two point charges, q₁ = +3.0 µC and q₂ = −5.0 µC, are 0.20 m apart. k = 8.99×10⁹ N·m²/C².",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the magnitude of the electric force between them.", "modelAnswer": "F = k·|q₁·q₂|/r² = 8.99×10⁹ × (3.0×10⁻⁶)(5.0×10⁻⁶)/0.20² ≈ 3.37 N.", "points": 3 },
+        { "label": "Part (b)", "text": "State whether the force is attractive or repulsive and why.", "modelAnswer": "Attractive — the charges have opposite signs, so they pull toward each other.", "points": 2 }
+      ]
+    },
+    {
+      "id": "frq-8",
+      "courseId": "ap-physics-c",
+      "unit": "Mechanics · Work & Energy",
+      "title": "Work done by a variable force",
+      "scenario": "A force F(x) = 6x (in newtons, x in meters) acts on a 2.0 kg object moving along the x-axis from x = 0 to x = 3.0 m, starting from rest.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the work done by the force over this interval.", "modelAnswer": "W = ∫₀³ 6x dx = 3x² |₀³ = 3(9) = 27 J.", "points": 3 },
+        { "label": "Part (b)", "text": "Use the work–energy theorem to find the object's speed at x = 3.0 m.", "modelAnswer": "W = ΔK = ½·m·v² → 27 = ½·2.0·v² → v = √27 ≈ 5.2 m/s.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-9",
+      "courseId": "ap-physics-c",
+      "unit": "Mechanics · Rotation",
+      "title": "Torque and angular acceleration of a disk",
+      "scenario": "A uniform solid disk (I = ½·M·R²) has M = 3.0 kg and R = 0.40 m. A constant tangential force of 12 N is applied at its rim.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the moment of inertia and the net torque about the center.", "modelAnswer": "I = ½ × 3.0 × 0.40² = 0.24 kg·m². τ = R·F = 0.40 × 12 = 4.8 N·m.", "points": 3 },
+        { "label": "Part (b)", "text": "Determine the angular acceleration of the disk.", "modelAnswer": "τ = I·α → α = 4.8 / 0.24 = 20 rad/s².", "points": 2 }
+      ]
+    },
+    {
+      "id": "frq-10",
+      "courseId": "ap-physics-c",
+      "unit": "E&M · Gauss's Law",
+      "title": "Field of a charged sphere",
+      "scenario": "A solid insulating sphere of radius R carries total charge Q uniformly distributed. Use Gauss's law.",
+      "parts": [
+        { "label": "Part (a)", "text": "Derive the electric field outside the sphere (r > R).", "modelAnswer": "By symmetry E·4πr² = Q/ε₀ → E = Q / (4π·ε₀·r²) = k·Q/r², directed radially.", "points": 3 },
+        { "label": "Part (b)", "text": "Derive the electric field inside the sphere (r < R).", "modelAnswer": "Enclosed charge q = Q·(r³/R³). E·4πr² = q/ε₀ → E = k·Q·r / R³, radially outward.", "points": 4 }
+      ]
+    }
+  ]
+}
