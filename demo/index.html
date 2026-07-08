@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physics Solved — component demo</title>
+  <!-- Loads the built bundle. data-ps-base="../" points data fetches at ../data/. -->
+  <link rel="stylesheet" href="../dist/physics-solved.min.css">
+  <script defer src="../dist/physics-solved.min.js" data-ps-base="../"></script>
+  <style>
+    /* Demo-page chrome only (this file is NOT part of the Squarespace site). */
+    body { margin: 0; background: #fafaf8; color: #101426;
+      font-family: "Inter", system-ui, sans-serif; }
+    .demo-topbar { background: #101426; color: #fff; padding: 14px 20px; }
+    .demo-topbar h1 { margin: 0; font-size: 18px; font-weight: 700; }
+    .demo-topbar p { margin: 4px 0 0; font-size: 13px; color: #aab3dd; }
+    .demo-block { border-top: 1px solid #e5e7ee; }
+    .demo-block:nth-child(even) { background: #fff; }
+    .demo-tag { max-width: 1120px; margin: 0 auto; padding: 20px 16px 0;
+      font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #5a6072; }
+  </style>
+</head>
+<body>
+  <header class="demo-topbar">
+    <h1>Physics Solved — component demo</h1>
+    <p>Every component mounted locally from <code>../data/</code>. Serve this folder over HTTP (see README) — opening via file:// blocks data fetches.</p>
+  </header>
+
+  <div class="demo-block">
+    <div class="demo-tag">carousel — physics &amp; chemistry</div>
+    <div class="ps-root">
+      <section class="ps-section">
+        <div class="ps-section-head">
+          <div class="ps-eyebrow">Study tools</div>
+          <h2 class="ps-h2">Choose your course</h2>
+          <p>Interactive equation finders, formula sheets, and practice — one set per class.</p>
+        </div>
+        <h3 class="ps-h3" style="margin-bottom:12px">Physics</h3>
+        <div data-ps-app="carousel" data-subject="physics"></div>
+        <h3 class="ps-h3" style="margin:32px 0 12px">Chemistry</h3>
+        <div data-ps-app="carousel" data-subject="chemistry"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="demo-block">
+    <div class="demo-tag">formula-library</div>
+    <div class="ps-root">
+      <section class="ps-section">
+        <div class="ps-section-head">
+          <div class="ps-eyebrow">Reference</div>
+          <h2 class="ps-h2">Formula Sheet Library</h2>
+          <p>Every constant and equation, grouped by topic and ready to print.</p>
+        </div>
+        <div data-ps-app="formula-library" data-subject="physics"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="demo-block">
+    <div class="demo-tag">frq</div>
+    <div class="ps-root">
+      <section class="ps-section">
+        <div class="ps-section-head">
+          <div class="ps-eyebrow">Practice</div>
+          <h2 class="ps-h2">Free-Response Practice</h2>
+          <p>Work a problem part by part, then check against the model answer.</p>
+        </div>
+        <div data-ps-app="frq"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="demo-block">
+    <div class="demo-tag">equation-finder — data-course="ap-physics-1"</div>
+    <div class="ps-root">
+      <section class="ps-section">
+        <div data-ps-app="equation-finder" data-course="ap-physics-1"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="demo-block">
+    <div class="demo-tag">simulator-kinematics</div>
+    <div class="ps-root">
+      <section class="ps-section">
+        <div data-ps-app="simulator-kinematics"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="demo-block">
+    <div class="demo-tag">portfolio</div>
+    <div class="ps-root">
+      <section class="ps-section">
+        <div class="ps-section-head">
+          <div class="ps-eyebrow">Portfolio</div>
+          <h2 class="ps-h2">Engineering &amp; coding projects</h2>
+        </div>
+        <div data-ps-app="portfolio"></div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
