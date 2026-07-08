@@ -1,0 +1,36 @@
+{
+  "course": "college-em",
+  "title": "College Physics · E&M Formula Sheet",
+  "tagline": "Algebra-based electricity & magnetism essentials.",
+  "constants": [
+    { "sym": "k", "value": "8.99×10⁹ N·m²/C²" },
+    { "sym": "e", "value": "1.60×10⁻¹⁹ C" },
+    { "sym": "ε₀", "value": "8.85×10⁻¹² C²/(N·m²)" }
+  ],
+  "categories": [
+    {
+      "title": "Electrostatics",
+      "rows": [
+        { "name": "Coulomb's law", "expr": "F = k·q₁·q₂ / r²" },
+        { "name": "Electric field", "expr": "E = F / q" },
+        { "name": "Potential", "expr": "V = k·q / r" }
+      ]
+    },
+    {
+      "title": "Circuits",
+      "rows": [
+        { "name": "Ohm's law", "expr": "V = I·R" },
+        { "name": "Power", "expr": "P = I·V" },
+        { "name": "Series resistance", "expr": "R_s = R₁ + R₂ + …" },
+        { "name": "Parallel resistance", "expr": "1/R_p = 1/R₁ + 1/R₂ + …" }
+      ]
+    },
+    {
+      "title": "Magnetism & Waves (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "Force on a charge", "expr": "F = q·v·B·sin θ" },
+        { "name": "Add more…", "expr": "Copy this row structure." }
+      ]
+    }
+  ]
+}

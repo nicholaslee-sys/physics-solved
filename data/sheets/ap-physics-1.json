@@ -1,0 +1,78 @@
+{
+  "course": "ap-physics-1",
+  "title": "AP Physics 1 Formula Sheet",
+  "tagline": "Mechanics · waves · the essentials on one page.",
+  "constants": [
+    { "sym": "g", "value": "9.8 m/s²" },
+    { "sym": "G", "value": "6.67×10⁻¹¹ N·m²/kg²" },
+    { "sym": "k", "value": "8.99×10⁹ N·m²/C²" },
+    { "sym": "e", "value": "1.60×10⁻¹⁹ C" },
+    { "sym": "1 eV", "value": "1.60×10⁻¹⁹ J" }
+  ],
+  "categories": [
+    {
+      "title": "Kinematics",
+      "rows": [
+        { "name": "Velocity", "expr": "v = v₀ + a·t" },
+        { "name": "Displacement", "expr": "Δx = v₀·t + ½·a·t²" },
+        { "name": "Velocity (no time)", "expr": "v² = v₀² + 2·a·Δx" },
+        { "name": "Average velocity", "expr": "v̄ = Δx / t" }
+      ]
+    },
+    {
+      "title": "Forces",
+      "rows": [
+        { "name": "Newton's 2nd law", "expr": "F_net = m·a" },
+        { "name": "Weight", "expr": "F_g = m·g" },
+        { "name": "Friction (max)", "expr": "F_f ≤ μ·N" }
+      ]
+    },
+    {
+      "title": "Circular Motion & Gravity",
+      "rows": [
+        { "name": "Centripetal accel.", "expr": "a_c = v² / r" },
+        { "name": "Centripetal force", "expr": "F_c = m·v² / r" },
+        { "name": "Gravitation", "expr": "F_g = G·M·m / r²" }
+      ]
+    },
+    {
+      "title": "Energy",
+      "rows": [
+        { "name": "Work", "expr": "W = F·d·cos θ" },
+        { "name": "Kinetic energy", "expr": "K = ½·m·v²" },
+        { "name": "Gravitational PE", "expr": "U_g = m·g·h" },
+        { "name": "Elastic PE", "expr": "U_s = ½·k·x²" },
+        { "name": "Power", "expr": "P = W / t" }
+      ]
+    },
+    {
+      "title": "Momentum",
+      "rows": [
+        { "name": "Momentum", "expr": "p = m·v" },
+        { "name": "Impulse", "expr": "J = F·Δt = Δp" }
+      ]
+    },
+    {
+      "title": "Rotation",
+      "rows": [
+        { "name": "Torque", "expr": "τ = r·F·sin θ" },
+        { "name": "Rotational 2nd law", "expr": "τ_net = I·α" },
+        { "name": "Angular momentum", "expr": "L = I·ω" }
+      ]
+    },
+    {
+      "title": "Simple Harmonic Motion",
+      "rows": [
+        { "name": "Spring period", "expr": "T = 2π·√(m / k)" },
+        { "name": "Pendulum period", "expr": "T = 2π·√(L / g)" },
+        { "name": "Frequency", "expr": "f = 1 / T" }
+      ]
+    },
+    {
+      "title": "Waves",
+      "rows": [
+        { "name": "Wave speed", "expr": "v = f·λ" }
+      ]
+    }
+  ]
+}

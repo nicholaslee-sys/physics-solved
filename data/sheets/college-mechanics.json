@@ -1,0 +1,43 @@
+{
+  "course": "college-mechanics",
+  "title": "College Physics · Mechanics Formula Sheet",
+  "tagline": "Algebra-based mechanics essentials.",
+  "constants": [
+    { "sym": "g", "value": "9.8 m/s²" },
+    { "sym": "G", "value": "6.67×10⁻¹¹ N·m²/kg²" }
+  ],
+  "categories": [
+    {
+      "title": "Kinematics",
+      "rows": [
+        { "name": "Velocity", "expr": "v = v₀ + a·t" },
+        { "name": "Position", "expr": "x = x₀ + v₀·t + ½·a·t²" },
+        { "name": "Velocity (no time)", "expr": "v² = v₀² + 2·a·(x − x₀)" }
+      ]
+    },
+    {
+      "title": "Forces",
+      "rows": [
+        { "name": "Newton's 2nd law", "expr": "F = m·a" },
+        { "name": "Weight", "expr": "F_g = m·g" },
+        { "name": "Friction", "expr": "F_f = μ·N" }
+      ]
+    },
+    {
+      "title": "Energy & Momentum",
+      "rows": [
+        { "name": "Work", "expr": "W = F·d·cos θ" },
+        { "name": "Kinetic energy", "expr": "K = ½·m·v²" },
+        { "name": "Gravitational PE", "expr": "U = m·g·h" },
+        { "name": "Momentum", "expr": "p = m·v" }
+      ]
+    },
+    {
+      "title": "Rotation & Fluids (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "Torque", "expr": "τ = r·F·sin θ" },
+        { "name": "Add more…", "expr": "Copy this row structure." }
+      ]
+    }
+  ]
+}

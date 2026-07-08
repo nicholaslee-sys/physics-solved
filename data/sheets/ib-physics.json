@@ -1,0 +1,56 @@
+{
+  "course": "ib-physics",
+  "title": "IB Physics Formula Sheet",
+  "tagline": "Core equations for SL and HL.",
+  "constants": [
+    { "sym": "g", "value": "9.81 m/s²" },
+    { "sym": "G", "value": "6.67×10⁻¹¹ N·m²/kg²" },
+    { "sym": "k", "value": "8.99×10⁹ N·m²/C²" },
+    { "sym": "e", "value": "1.60×10⁻¹⁹ C" },
+    { "sym": "R", "value": "8.31 J/(mol·K)" }
+  ],
+  "categories": [
+    {
+      "title": "Mechanics",
+      "rows": [
+        { "name": "suvat (velocity)", "expr": "v = u + a·t" },
+        { "name": "suvat (displacement)", "expr": "s = u·t + ½·a·t²" },
+        { "name": "suvat (no time)", "expr": "v² = u² + 2·a·s" },
+        { "name": "Newton's 2nd law", "expr": "F = m·a" },
+        { "name": "Momentum", "expr": "p = m·v" }
+      ]
+    },
+    {
+      "title": "Energy & Power",
+      "rows": [
+        { "name": "Work", "expr": "W = F·s·cos θ" },
+        { "name": "Kinetic energy", "expr": "E_k = ½·m·v²" },
+        { "name": "Gravitational PE", "expr": "ΔE_p = m·g·Δh" },
+        { "name": "Power", "expr": "P = W / t" },
+        { "name": "Efficiency", "expr": "η = useful out / total in" }
+      ]
+    },
+    {
+      "title": "Thermal Physics",
+      "rows": [
+        { "name": "Sensible heat", "expr": "Q = m·c·ΔT" },
+        { "name": "Latent heat", "expr": "Q = m·L" },
+        { "name": "Ideal gas law", "expr": "P·V = n·R·T" }
+      ]
+    },
+    {
+      "title": "Waves & Circular Motion (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "Wave speed", "expr": "c = f·λ" },
+        { "name": "Centripetal accel.", "expr": "a = v² / r" },
+        { "name": "Add more…", "expr": "Copy this row structure." }
+      ]
+    },
+    {
+      "title": "Fields & Atomic (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "Add your equations", "expr": "Gravitational/electric fields, nuclear, quantum, etc." }
+      ]
+    }
+  ]
+}

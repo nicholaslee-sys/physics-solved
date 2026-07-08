@@ -1,0 +1,52 @@
+{
+  "course": "ap-physics-c-mechanics",
+  "title": "AP Physics C · Mechanics Formula Sheet",
+  "tagline": "Calculus-based mechanics on one page.",
+  "constants": [
+    { "sym": "g", "value": "9.8 m/s²" },
+    { "sym": "G", "value": "6.67×10⁻¹¹ N·m²/kg²" }
+  ],
+  "categories": [
+    {
+      "title": "Kinematics",
+      "rows": [
+        { "name": "Velocity", "expr": "v = dx/dt" },
+        { "name": "Acceleration", "expr": "a = dv/dt" },
+        { "name": "Constant-a velocity", "expr": "v = v₀ + a·t" },
+        { "name": "Constant-a position", "expr": "x = x₀ + v₀·t + ½·a·t²" }
+      ]
+    },
+    {
+      "title": "Newton's Laws & Momentum",
+      "rows": [
+        { "name": "Second law", "expr": "F = dp/dt = m·a" },
+        { "name": "Momentum", "expr": "p = m·v" },
+        { "name": "Impulse", "expr": "J = ∫ F · dt = Δp" }
+      ]
+    },
+    {
+      "title": "Work, Energy & Power",
+      "rows": [
+        { "name": "Work", "expr": "W = ∫ F · dx" },
+        { "name": "Kinetic energy", "expr": "K = ½·m·v²" },
+        { "name": "Power", "expr": "P = dW/dt = F·v" }
+      ]
+    },
+    {
+      "title": "Rotation",
+      "rows": [
+        { "name": "Torque", "expr": "τ = r × F = I·α" },
+        { "name": "Moment of inertia", "expr": "I = ∫ r² · dm" },
+        { "name": "Angular momentum", "expr": "L = I·ω" },
+        { "name": "Rotational KE", "expr": "K_rot = ½·I·ω²" }
+      ]
+    },
+    {
+      "title": "Oscillations & Gravitation (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "SHM", "expr": "x = A·cos(ω·t + φ)" },
+        { "name": "Add more…", "expr": "Copy this row structure." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "course": "ap-physics-2",
+  "title": "AP Physics 2 Formula Sheet",
+  "tagline": "Fluids · thermodynamics · electricity & magnetism.",
+  "constants": [
+    { "sym": "g", "value": "9.8 m/s²" },
+    { "sym": "k", "value": "8.99×10⁹ N·m²/C²" },
+    { "sym": "e", "value": "1.60×10⁻¹⁹ C" },
+    { "sym": "R", "value": "8.31 J/(mol·K)" },
+    { "sym": "1 eV", "value": "1.60×10⁻¹⁹ J" }
+  ],
+  "categories": [
+    {
+      "title": "Fluids",
+      "rows": [
+        { "name": "Density", "expr": "ρ = m / V" },
+        { "name": "Pressure", "expr": "P = F / A" },
+        { "name": "Pressure with depth", "expr": "P = P₀ + ρ·g·h" },
+        { "name": "Buoyant force", "expr": "F_b = ρ·V·g" },
+        { "name": "Continuity", "expr": "A₁·v₁ = A₂·v₂" }
+      ]
+    },
+    {
+      "title": "Thermodynamics",
+      "rows": [
+        { "name": "Ideal gas law", "expr": "P·V = n·R·T" },
+        { "name": "Heat", "expr": "Q = m·c·ΔT" },
+        { "name": "First law", "expr": "ΔU = Q + W" }
+      ]
+    },
+    {
+      "title": "Electrostatics",
+      "rows": [
+        { "name": "Coulomb's law", "expr": "F_E = k·q₁·q₂ / r²" },
+        { "name": "Electric field", "expr": "E = F_E / q" },
+        { "name": "Point-charge field", "expr": "E = k·q / r²" },
+        { "name": "Potential", "expr": "V = k·q / r" }
+      ]
+    },
+    {
+      "title": "Circuits",
+      "rows": [
+        { "name": "Ohm's law", "expr": "V = I·R" },
+        { "name": "Power", "expr": "P = I·V" },
+        { "name": "Series resistance", "expr": "R_s = R₁ + R₂ + …" },
+        { "name": "Parallel resistance", "expr": "1/R_p = 1/R₁ + 1/R₂ + …" }
+      ]
+    },
+    {
+      "title": "Magnetism (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "Force on a charge", "expr": "F = q·v·B·sin θ" },
+        { "name": "Add more…", "expr": "Copy this row structure." }
+      ]
+    },
+    {
+      "title": "Optics & Modern (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "Add your equations", "expr": "Snell's law, thin lens, photon energy, etc." }
+      ]
+    }
+  ]
+}

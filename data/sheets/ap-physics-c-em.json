@@ -1,0 +1,46 @@
+{
+  "course": "ap-physics-c-em",
+  "title": "AP Physics C · E&M Formula Sheet",
+  "tagline": "Calculus-based electricity & magnetism.",
+  "constants": [
+    { "sym": "k", "value": "8.99×10⁹ N·m²/C²" },
+    { "sym": "ε₀", "value": "8.85×10⁻¹² C²/(N·m²)" },
+    { "sym": "μ₀", "value": "4π×10⁻⁷ T·m/A" },
+    { "sym": "e", "value": "1.60×10⁻¹⁹ C" }
+  ],
+  "categories": [
+    {
+      "title": "Electrostatics",
+      "rows": [
+        { "name": "Coulomb's law", "expr": "F = k·q₁·q₂ / r²" },
+        { "name": "Electric field", "expr": "E = F / q" },
+        { "name": "Gauss's law", "expr": "∮ E · dA = Q_enc / ε₀" },
+        { "name": "Potential", "expr": "V = k·q / r" }
+      ]
+    },
+    {
+      "title": "Capacitance",
+      "rows": [
+        { "name": "Capacitance", "expr": "C = Q / V" },
+        { "name": "Parallel-plate", "expr": "C = ε₀·A / d" },
+        { "name": "Stored energy", "expr": "U = ½·C·V²" }
+      ]
+    },
+    {
+      "title": "Circuits",
+      "rows": [
+        { "name": "Current", "expr": "I = dQ/dt" },
+        { "name": "Ohm's law", "expr": "V = I·R" },
+        { "name": "Power", "expr": "P = I·V" }
+      ]
+    },
+    {
+      "title": "Magnetism (PLACEHOLDER — replace with your rows)",
+      "rows": [
+        { "name": "Force on a charge", "expr": "F = q·v × B" },
+        { "name": "Ampère's law", "expr": "∮ B · dl = μ₀·I_enc" },
+        { "name": "Add more…", "expr": "Faraday's law, inductance, etc." }
+      ]
+    }
+  ]
+}
