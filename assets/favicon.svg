@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Physics Solved">
+  <rect width="512" height="512" rx="112" fill="#101426"></rect>
+  <text x="50%" y="52%" text-anchor="middle" dominant-baseline="central" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" font-size="248" letter-spacing="-8" fill="#ffffff">PS</text>
+  <rect x="150" y="372" width="212" height="26" rx="13" fill="#2547d0"></rect>
+</svg>

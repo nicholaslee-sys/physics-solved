@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Physics Solved">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#e5e7ee" stroke-width="1"></path>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0.5">
+      <stop offset="0" stop-color="#fafaf8" stop-opacity="0"></stop>
+      <stop offset="1" stop-color="#fafaf8" stop-opacity="0.9"></stop>
+    </linearGradient>
+  </defs>
+
+  
+  <rect width="1200" height="630" fill="#fafaf8"></rect>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.7"></rect>
+  <rect width="1200" height="630" fill="url(#fade)"></rect>
+
+  
+  <text x="1170" y="250" text-anchor="end" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="300" font-weight="500" fill="#2547d0" opacity="0.05" letter-spacing="-10">F=ma</text>
+
+  
+  <g transform="translate(90, 0)">
+    
+    <text x="2" y="250" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="26" letter-spacing="4" fill="#2547d0">FREE STUDY TOOLS</text>
+
+    
+    <text x="0" y="345" font-family="&#39;Crimson Pro&#39;, Georgia, serif" font-weight="600" font-size="108" letter-spacing="-2" fill="#101426">Physics Solved</text>
+
+    
+    <text x="2" y="420" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="40" fill="#101426">AP Physics 1 · Study Tools</text>
+
+    
+    <text x="2" y="470" font-family="Inter, Arial, sans-serif" font-weight="400" font-size="27" fill="#5a6072">Interactive equation finders, formula sheets, and practice.</text>
+  </g>
+
+  
+  <rect x="90" y="536" width="120" height="8" rx="4" fill="#2547d0"></rect>
+  <text x="222" y="546" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="24" fill="#5a6072">physicssolved.com</text>
+</svg>
