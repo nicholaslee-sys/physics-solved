@@ -1,0 +1,169 @@
+{
+  "course": "ap-chemistry",
+  "note": "Standard AP Chemistry equations. Symbols follow common textbook/College Board usage; verify against your syllabus. Items marked \"todo\": true are ones to double-check placement/exact form.",
+  "units": [
+    {
+      "title": "Unit 1 — Stoichiometry & Moles",
+      "variables": [
+        { "sym": "n", "name": "amount (moles)" },
+        { "sym": "m", "name": "mass (g)" },
+        { "sym": "M", "name": "molar mass (g/mol)" },
+        { "sym": "N", "name": "number of particles" },
+        { "sym": "N_A", "name": "Avogadro's number", "note": "6.022×10²³ mol⁻¹" },
+        { "sym": "c", "name": "molar concentration (mol/L)" },
+        { "sym": "V", "name": "volume (L)" }
+      ],
+      "equations": [
+        { "name": "Moles from mass", "expr": "n = m / M", "uses": ["n", "m", "M"] },
+        { "name": "Particles from moles", "expr": "N = n · N_A", "uses": ["N", "n", "N_A"] },
+        { "name": "Molarity", "expr": "c = n / V", "uses": ["c", "n", "V"] },
+        { "name": "Dilution", "expr": "c₁·V₁ = c₂·V₂", "uses": ["c", "V"] }
+      ]
+    },
+    {
+      "title": "Unit 2 — Gases",
+      "variables": [
+        { "sym": "P", "name": "pressure" },
+        { "sym": "V", "name": "volume" },
+        { "sym": "n", "name": "moles" },
+        { "sym": "R", "name": "gas constant", "note": "0.08206 L·atm/(mol·K) or 8.314 J/(mol·K)" },
+        { "sym": "T", "name": "temperature (K)" },
+        { "sym": "D", "name": "gas density" },
+        { "sym": "M", "name": "molar mass" },
+        { "sym": "X", "name": "mole fraction" },
+        { "sym": "P_i", "name": "partial pressure of gas i" }
+      ],
+      "equations": [
+        { "name": "Ideal gas law", "expr": "P·V = n·R·T", "uses": ["P", "V", "n", "R", "T"] },
+        { "name": "Dalton's law", "expr": "P_total = ΣP_i", "uses": ["P", "P_i"] },
+        { "name": "Partial pressure", "expr": "P_i = X_i · P_total", "uses": ["P_i", "X", "P"] },
+        { "name": "Gas density", "expr": "D = P·M / (R·T)", "uses": ["D", "P", "M", "R", "T"] }
+      ]
+    },
+    {
+      "title": "Unit 3 — Thermochemistry",
+      "variables": [
+        { "sym": "q", "name": "heat" },
+        { "sym": "m", "name": "mass" },
+        { "sym": "c", "name": "specific heat capacity" },
+        { "sym": "ΔT", "name": "temperature change" },
+        { "sym": "ΔH", "name": "enthalpy change" },
+        { "sym": "ΔH_f", "name": "standard enthalpy of formation" },
+        { "sym": "ΔS", "name": "entropy change" },
+        { "sym": "ΔG", "name": "Gibbs free energy change" },
+        { "sym": "T", "name": "temperature (K)" },
+        { "sym": "n", "name": "moles" }
+      ],
+      "equations": [
+        { "name": "Calorimetry", "expr": "q = m·c·ΔT", "uses": ["q", "m", "c", "ΔT"] },
+        { "name": "Heat from moles", "expr": "q = n·ΔH", "uses": ["q", "n", "ΔH"] },
+        { "name": "Hess's law (formation)", "expr": "ΔH°_rxn = ΣΔH_f(products) − ΣΔH_f(reactants)", "uses": ["ΔH", "ΔH_f"] },
+        { "name": "Gibbs free energy", "expr": "ΔG = ΔH − T·ΔS", "uses": ["ΔG", "ΔH", "T", "ΔS"] }
+      ]
+    },
+    {
+      "title": "Unit 4 — Atomic Structure & Periodicity",
+      "variables": [
+        { "sym": "E", "name": "photon energy" },
+        { "sym": "h", "name": "Planck's constant", "note": "6.626×10⁻³⁴ J·s" },
+        { "sym": "ν", "name": "frequency (Hz)" },
+        { "sym": "c", "name": "speed of light", "note": "3.00×10⁸ m/s" },
+        { "sym": "λ", "name": "wavelength" },
+        { "sym": "A", "name": "absorbance" },
+        { "sym": "ε", "name": "molar absorptivity" },
+        { "sym": "b", "name": "path length" },
+        { "sym": "C", "name": "concentration" }
+      ],
+      "equations": [
+        { "name": "Photon energy", "expr": "E = h·ν", "uses": ["E", "h", "ν"] },
+        { "name": "Wave relationship", "expr": "c = λ·ν", "uses": ["c", "λ", "ν"] },
+        { "name": "Energy from wavelength", "expr": "E = h·c / λ", "uses": ["E", "h", "c", "λ"] },
+        { "name": "Beer–Lambert law", "expr": "A = ε·b·C", "uses": ["A", "ε", "b", "C"], "todo": true }
+      ]
+    },
+    {
+      "title": "Unit 5 — Kinetics",
+      "variables": [
+        { "sym": "rate", "name": "reaction rate" },
+        { "sym": "k", "name": "rate constant" },
+        { "sym": "[A]", "name": "concentration of A" },
+        { "sym": "[A]₀", "name": "initial concentration of A" },
+        { "sym": "t", "name": "time" },
+        { "sym": "t½", "name": "half-life" },
+        { "sym": "E_a", "name": "activation energy" },
+        { "sym": "A_f", "name": "frequency (pre-exponential) factor" },
+        { "sym": "R", "name": "gas constant" },
+        { "sym": "T", "name": "temperature (K)" }
+      ],
+      "equations": [
+        { "name": "Zero order (integrated)", "expr": "[A]_t = −k·t + [A]₀", "uses": ["[A]", "k", "t", "[A]₀"] },
+        { "name": "First order (integrated)", "expr": "ln[A]_t = −k·t + ln[A]₀", "uses": ["[A]", "k", "t", "[A]₀"] },
+        { "name": "Second order (integrated)", "expr": "1/[A]_t = k·t + 1/[A]₀", "uses": ["[A]", "k", "t", "[A]₀"] },
+        { "name": "First-order half-life", "expr": "t½ = 0.693 / k", "uses": ["t½", "k"] },
+        { "name": "Arrhenius equation", "expr": "ln k = −(E_a / R)·(1/T) + ln A_f", "uses": ["k", "E_a", "R", "T", "A_f"] }
+      ]
+    },
+    {
+      "title": "Unit 6 — Equilibrium",
+      "variables": [
+        { "sym": "K", "name": "equilibrium constant (Kc)" },
+        { "sym": "K_p", "name": "equilibrium constant (pressures)" },
+        { "sym": "Q", "name": "reaction quotient" },
+        { "sym": "R", "name": "gas constant" },
+        { "sym": "T", "name": "temperature (K)" },
+        { "sym": "Δn", "name": "change in moles of gas" },
+        { "sym": "ΔG", "name": "Gibbs free energy change" }
+      ],
+      "equations": [
+        { "name": "Equilibrium constant", "expr": "K = [products] / [reactants]", "uses": ["K"] },
+        { "name": "Reaction quotient", "expr": "Q = [products] / [reactants]  (non-equilibrium)", "uses": ["Q"] },
+        { "name": "Kp from Kc", "expr": "K_p = K·(R·T)^Δn", "uses": ["K_p", "K", "R", "T", "Δn"] },
+        { "name": "Free energy & K", "expr": "ΔG° = −R·T·ln K", "uses": ["ΔG", "R", "T", "K"] }
+      ]
+    },
+    {
+      "title": "Unit 7 — Acids & Bases",
+      "variables": [
+        { "sym": "pH", "name": "acidity" },
+        { "sym": "pOH", "name": "basicity" },
+        { "sym": "[H⁺]", "name": "hydrogen ion concentration" },
+        { "sym": "[OH⁻]", "name": "hydroxide ion concentration" },
+        { "sym": "K_w", "name": "water ionization constant", "note": "1.0×10⁻¹⁴ at 25 °C" },
+        { "sym": "K_a", "name": "acid ionization constant" },
+        { "sym": "K_b", "name": "base ionization constant" },
+        { "sym": "pK_a", "name": "−log K_a" }
+      ],
+      "equations": [
+        { "name": "pH", "expr": "pH = −log[H⁺]", "uses": ["pH", "[H⁺]"] },
+        { "name": "pOH", "expr": "pOH = −log[OH⁻]", "uses": ["pOH", "[OH⁻]"] },
+        { "name": "Water relationship", "expr": "pH + pOH = 14", "uses": ["pH", "pOH"] },
+        { "name": "Kw", "expr": "K_w = [H⁺][OH⁻] = K_a·K_b", "uses": ["K_w", "[H⁺]", "[OH⁻]", "K_a", "K_b"] },
+        { "name": "pKa", "expr": "pK_a = −log K_a", "uses": ["pK_a", "K_a"] },
+        { "name": "Henderson–Hasselbalch", "expr": "pH = pK_a + log([A⁻]/[HA])", "uses": ["pH", "pK_a"] }
+      ]
+    },
+    {
+      "title": "Unit 8 — Electrochemistry",
+      "variables": [
+        { "sym": "E°", "name": "standard cell potential" },
+        { "sym": "E", "name": "cell potential" },
+        { "sym": "n", "name": "moles of electrons" },
+        { "sym": "F", "name": "Faraday's constant", "note": "96485 C/mol" },
+        { "sym": "Q", "name": "reaction quotient" },
+        { "sym": "R", "name": "gas constant" },
+        { "sym": "T", "name": "temperature (K)" },
+        { "sym": "ΔG", "name": "Gibbs free energy change" },
+        { "sym": "I", "name": "current (A)" },
+        { "sym": "t", "name": "time (s)" },
+        { "sym": "q", "name": "charge (C)" }
+      ],
+      "equations": [
+        { "name": "Free energy & cell potential", "expr": "ΔG° = −n·F·E°", "uses": ["ΔG", "n", "F", "E°"] },
+        { "name": "Cell potential", "expr": "E°_cell = E°_cathode − E°_anode", "uses": ["E°"] },
+        { "name": "Nernst equation", "expr": "E = E° − (R·T / (n·F))·ln Q", "uses": ["E", "E°", "R", "T", "n", "F", "Q"] },
+        { "name": "Nernst (25 °C)", "expr": "E = E° − (0.0592 / n)·log Q", "uses": ["E", "E°", "n", "Q"], "todo": true },
+        { "name": "Charge from current", "expr": "q = I·t", "uses": ["q", "I", "t"] }
+      ]
+    }
+  ]
+}
