@@ -13,7 +13,7 @@
     color: #000;
   }
 
-  /* Hide all interactive chrome when printing. */
+  /* Hide all interactive chrome + decorative hero when printing. */
   .ps-tabs,
   .ps-pills,
   .ps-btn,
@@ -21,6 +21,8 @@
   .ps-carousel-arrow,
   .ps-portfolio-toggle,
   .ps-frq-controls,
+  .ps-hero-bg,
+  .ps-hero-eq,
   .ps-sim--dark { display: none !important; }
 
   .ps-tabpanel { padding-top: 0; }

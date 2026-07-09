@@ -1,8 +1,9 @@
 /* Physics Solved — design tokens ("clean light academic").
  * Scoped to .ps-root so nothing leaks into the Squarespace theme.
- * Fonts: Inter (UI) + JetBrains Mono (equations, values, constants).
+ * Fonts: Inter (UI) + JetBrains Mono (equations, values, constants)
+ *        + Crimson Pro (display serif — wordmark & section headings ONLY).
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Crimson+Pro:wght@500;600&display=swap");
 
 .ps-root {
   /* Color */
@@ -10,8 +11,14 @@
   --ps-surface: #ffffff;
   --ps-ink: #101426;
   --ps-muted: #5a6072;
-  --ps-accent: #2547d0;
+  --ps-accent: #2547d0;          /* primary — physics blue */
   --ps-accent-hover: #1c38a8;
+  --ps-accent-soft: color-mix(in srgb, var(--ps-accent) 10%, transparent);
+
+  /* Secondary — reserved for chemistry-flagged elements. Warm amber, AA on white. */
+  --ps-accent-warm: #8f5a12;
+  --ps-accent-warm-hover: #71460d;
+
   --ps-success: #1a7f4e;
   --ps-border: #e5e7ee;
 
@@ -21,15 +28,16 @@
   --ps-shadow: 0 1px 3px rgb(16 20 38 / .08);
   --ps-shadow-md: 0 6px 20px rgb(16 20 38 / .10);
 
-  /* Type scale — 13 / 15 / 17 / 22 / 28 / 36 */
+  /* Type scale — 13 / 15 / 17 / 22 / 28 / 36 / 52 */
   --ps-fs-xs: 13px;
   --ps-fs-sm: 15px;
   --ps-fs-md: 17px;
   --ps-fs-lg: 22px;
   --ps-fs-xl: 28px;
   --ps-fs-2xl: 36px;
+  --ps-fs-3xl: 52px;
 
-  /* Spacing — 4 / 8 / 12 / 16 / 24 / 32 / 48 */
+  /* Spacing — 4 / 8 / 12 / 16 / 24 / 32 / 48 / 72 */
   --ps-s1: 4px;
   --ps-s2: 8px;
   --ps-s3: 12px;
@@ -37,10 +45,16 @@
   --ps-s5: 24px;
   --ps-s6: 32px;
   --ps-s7: 48px;
+  --ps-s8: 72px;
+
+  /* Motion — one duration, one easing, everywhere */
+  --ps-ease: cubic-bezier(.2, .6, .2, 1);
+  --ps-dur: 180ms;
 
   /* Fonts */
   --ps-font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --ps-font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", "Menlo", "Consolas", monospace;
+  --ps-font-display: "Crimson Pro", Georgia, "Times New Roman", serif;
 
   /* Base */
   color: var(--ps-ink);
