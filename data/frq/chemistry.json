@@ -1,0 +1,114 @@
+{
+  "_note": "Starter AP Chemistry FRQs with correct worked physics/chem. courseId must match a course id in registry.json. difficulty is 1 (easy) – 3 (hard); points are per part. Expand freely.",
+  "questions": [
+    {
+      "id": "chem-1",
+      "courseId": "ap-chemistry",
+      "unit": "Stoichiometry",
+      "title": "Limiting reactant in ammonia synthesis",
+      "difficulty": 2,
+      "scenario": "For N₂(g) + 3 H₂(g) → 2 NH₃(g), a reactor is charged with 28 g of N₂ and 10 g of H₂. Use molar masses N₂ = 28 g/mol, H₂ = 2.0 g/mol, NH₃ = 17 g/mol.",
+      "parts": [
+        { "label": "Part (a)", "text": "Identify the limiting reactant.", "modelAnswer": "n(N₂) = 28/28 = 1.0 mol; n(H₂) = 10/2.0 = 5.0 mol. 1.0 mol N₂ needs 3.0 mol H₂, and 5.0 mol H₂ is available, so H₂ is in excess and N₂ is limiting.", "points": 2 },
+        { "label": "Part (b)", "text": "Calculate the mass of NH₃ produced.", "modelAnswer": "From 1.0 mol N₂ → 2.0 mol NH₃. Mass = 2.0 × 17 = 34 g NH₃.", "points": 2 },
+        { "label": "Part (c)", "text": "How many moles of the excess reactant remain?", "modelAnswer": "H₂ used = 3 × 1.0 = 3.0 mol; remaining = 5.0 − 3.0 = 2.0 mol H₂.", "points": 2 }
+      ]
+    },
+    {
+      "id": "chem-2",
+      "courseId": "ap-chemistry",
+      "unit": "Gases",
+      "title": "Partial pressures in a gas mixture",
+      "difficulty": 2,
+      "scenario": "A rigid 2.0 L vessel at 300 K holds 0.50 mol O₂ and 0.50 mol N₂. Use R = 0.08206 L·atm/(mol·K).",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the total pressure in the vessel.", "modelAnswer": "n = 1.0 mol. P = nRT/V = (1.0)(0.08206)(300)/2.0 ≈ 12.3 atm.", "points": 3 },
+        { "label": "Part (b)", "text": "Calculate the partial pressure of O₂.", "modelAnswer": "X(O₂) = 0.50/1.0 = 0.50, so P(O₂) = 0.50 × 12.3 ≈ 6.2 atm.", "points": 2 }
+      ]
+    },
+    {
+      "id": "chem-3",
+      "courseId": "ap-chemistry",
+      "unit": "Thermochemistry",
+      "title": "Calorimetry of a dissolving salt",
+      "difficulty": 2,
+      "scenario": "Dissolving 0.010 mol of a salt in 50.0 g of water raises the temperature from 25.0 °C to 45.0 °C. Assume the solution has the specific heat of water, c = 4.18 J/(g·°C).",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the heat absorbed by the water.", "modelAnswer": "q = m·c·ΔT = 50.0 × 4.18 × 20.0 = 4180 J = 4.18 kJ.", "points": 3 },
+        { "label": "Part (b)", "text": "Determine the molar enthalpy of solution and state whether it is exo- or endothermic.", "modelAnswer": "Heat came from the dissolving process, so it is exothermic. ΔH = −4.18 kJ / 0.010 mol = −418 kJ/mol.", "points": 2 }
+      ]
+    },
+    {
+      "id": "chem-4",
+      "courseId": "ap-chemistry",
+      "unit": "Atomic Structure",
+      "title": "Energy of an emitted photon",
+      "difficulty": 1,
+      "scenario": "A hydrogen atom emits light of wavelength λ = 486 nm. Use h = 6.626×10⁻³⁴ J·s and c = 3.00×10⁸ m/s.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the frequency of the light.", "modelAnswer": "ν = c/λ = (3.00×10⁸)/(486×10⁻⁹) ≈ 6.17×10¹⁴ Hz.", "points": 2 },
+        { "label": "Part (b)", "text": "Calculate the energy of one photon.", "modelAnswer": "E = hν = (6.626×10⁻³⁴)(6.17×10¹⁴) ≈ 4.09×10⁻¹⁹ J.", "points": 2 }
+      ]
+    },
+    {
+      "id": "chem-5",
+      "courseId": "ap-chemistry",
+      "unit": "Kinetics",
+      "title": "First-order decomposition",
+      "difficulty": 3,
+      "scenario": "A reactant decomposes by first-order kinetics with rate constant k = 0.0231 s⁻¹.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the half-life of the reaction.", "modelAnswer": "t½ = 0.693/k = 0.693/0.0231 ≈ 30.0 s.", "points": 2 },
+        { "label": "Part (b)", "text": "How long until only 25% of the reactant remains?", "modelAnswer": "25% is two half-lives (100→50→25%), so t = 2 × 30.0 = 60.0 s. (Or ln(0.25) = −kt → t = 60.0 s.)", "points": 3 }
+      ]
+    },
+    {
+      "id": "chem-6",
+      "courseId": "ap-chemistry",
+      "unit": "Equilibrium",
+      "title": "ICE table for HI formation",
+      "difficulty": 3,
+      "scenario": "For H₂(g) + I₂(g) ⇌ 2 HI(g), Kc = 50.0 at the reaction temperature. A flask initially contains [H₂] = [I₂] = 1.00 M and [HI] = 0.",
+      "parts": [
+        { "label": "Part (a)", "text": "Set up an ICE table in terms of the change x.", "modelAnswer": "Initial: 1.00, 1.00, 0. Change: −x, −x, +2x. Equilibrium: (1.00−x), (1.00−x), 2x.", "points": 2 },
+        { "label": "Part (b)", "text": "Solve for the equilibrium concentration of HI.", "modelAnswer": "Kc = (2x)²/((1−x)²) = 50.0 → 2x/(1−x) = √50 ≈ 7.07 → x ≈ 0.779. [HI] = 2x ≈ 1.56 M.", "points": 4 }
+      ]
+    },
+    {
+      "id": "chem-7",
+      "courseId": "ap-chemistry",
+      "unit": "Acids & Bases",
+      "title": "pH of a weak acid",
+      "difficulty": 3,
+      "scenario": "A 0.10 M solution of a weak monoprotic acid HA has Ka = 1.8×10⁻⁵.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate [H⁺] at equilibrium (approximation allowed).", "modelAnswer": "Ka = x²/0.10 ≈ 1.8×10⁻⁵ → x² = 1.8×10⁻⁶ → x = [H⁺] ≈ 1.34×10⁻³ M.", "points": 3 },
+        { "label": "Part (b)", "text": "Calculate the pH.", "modelAnswer": "pH = −log(1.34×10⁻³) ≈ 2.87.", "points": 2 }
+      ]
+    },
+    {
+      "id": "chem-8",
+      "courseId": "ap-chemistry",
+      "unit": "Electrochemistry",
+      "title": "Standard cell potential and free energy",
+      "difficulty": 3,
+      "scenario": "A galvanic cell is built from Zn²⁺/Zn (E° = −0.76 V) and Cu²⁺/Cu (E° = +0.34 V). Use F = 96485 C/mol.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the standard cell potential and identify the cathode.", "modelAnswer": "Cu²⁺/Cu is the cathode (higher reduction potential). E°cell = E°cathode − E°anode = 0.34 − (−0.76) = +1.10 V.", "points": 2 },
+        { "label": "Part (b)", "text": "Calculate ΔG° for the reaction (n = 2).", "modelAnswer": "ΔG° = −nFE° = −(2)(96485)(1.10) ≈ −2.12×10⁵ J ≈ −212 kJ.", "points": 3 }
+      ]
+    },
+    {
+      "id": "chem-9",
+      "courseId": "ap-chemistry",
+      "unit": "Stoichiometry",
+      "title": "Acid–base titration",
+      "difficulty": 2,
+      "scenario": "A 25.0 mL sample of HCl is exactly neutralized by 32.0 mL of 0.100 M NaOH.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the moles of NaOH used.", "modelAnswer": "n(NaOH) = 0.0320 L × 0.100 mol/L = 3.20×10⁻³ mol.", "points": 2 },
+        { "label": "Part (b)", "text": "Determine the molarity of the HCl.", "modelAnswer": "HCl + NaOH → NaCl + H₂O is 1:1, so n(HCl) = 3.20×10⁻³ mol. [HCl] = 3.20×10⁻³ / 0.0250 = 0.128 M.", "points": 3 }
+      ]
+    }
+  ]
+}

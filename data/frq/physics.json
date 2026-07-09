@@ -1,11 +1,12 @@
 {
-  "_note": "SAMPLE free-response questions with correct physics, provided so the tool renders and grades end-to-end. Replace scenario / part text / modelAnswer with your own FRQs. courseId must match a course id in registry.json (badge color is derived from the registry, not stored here).",
+  "_note": "SAMPLE free-response questions with correct physics. difficulty is 1 (easy) – 3 (hard); points are per part. courseId must match a course id in registry.json (badge color comes from the registry). Replace/expand freely.",
   "questions": [
     {
       "id": "frq-1",
       "courseId": "ap-physics-1",
       "unit": "Kinematics",
       "title": "Projectile launched from a cliff",
+      "difficulty": 2,
       "scenario": "A ball is launched horizontally at 15 m/s from the top of a 20 m cliff. Ignore air resistance and take g = 9.8 m/s².",
       "parts": [
         { "label": "Part (a)", "text": "How long is the ball in the air before it lands?", "modelAnswer": "Vertical motion: 20 = ½·g·t² → t = √(2·20/9.8) ≈ 2.02 s.", "points": 3 },
@@ -18,6 +19,7 @@
       "courseId": "ap-physics-1",
       "unit": "Dynamics",
       "title": "Block on an inclined plane",
+      "difficulty": 2,
       "scenario": "A 4.0 kg block is released from rest on a frictionless incline angled at 30° above the horizontal.",
       "parts": [
         { "label": "Part (a)", "text": "Draw a free-body diagram and find the acceleration down the incline.", "modelAnswer": "Forces: weight mg down, normal force N perpendicular. a = g·sin30° = 9.8 × 0.5 = 4.9 m/s².", "points": 4 },
@@ -29,6 +31,7 @@
       "courseId": "ap-physics-1",
       "unit": "Energy",
       "title": "Spring launches a cart",
+      "difficulty": 2,
       "scenario": "A spring (k = 800 N/m) is compressed 0.10 m and used to launch a 0.50 kg cart along a frictionless track.",
       "parts": [
         { "label": "Part (a)", "text": "How much elastic potential energy is stored in the compressed spring?", "modelAnswer": "U_s = ½·k·x² = ½ × 800 × 0.10² = 4.0 J.", "points": 2 },
@@ -40,6 +43,7 @@
       "courseId": "ap-physics-1",
       "unit": "Momentum",
       "title": "Perfectly inelastic collision",
+      "difficulty": 2,
       "scenario": "A 1200 kg car moving east at 20 m/s collides with a stationary 800 kg car and they lock together.",
       "parts": [
         { "label": "Part (a)", "text": "Find the velocity of the combined wreck immediately after the collision.", "modelAnswer": "Conserve momentum: (1200)(20) = (1200+800)·v → v = 24000/2000 = 12 m/s east.", "points": 3 },
@@ -47,10 +51,35 @@
       ]
     },
     {
+      "id": "frq-17",
+      "courseId": "ap-physics-1",
+      "unit": "Circular Motion",
+      "title": "Car on a flat curve",
+      "difficulty": 2,
+      "scenario": "A car rounds a flat (unbanked) curve of radius 50 m. The coefficient of static friction between the tires and road is μₛ = 0.60. Take g = 9.8 m/s².",
+      "parts": [
+        { "label": "Part (a)", "text": "Which force provides the centripetal force, and what is the condition for the maximum speed?", "modelAnswer": "Static friction provides the centripetal force. At the maximum speed friction is at its max: μₛ·m·g = m·v²/r.", "points": 2 },
+        { "label": "Part (b)", "text": "Calculate the maximum speed for which the car does not skid.", "modelAnswer": "v = √(μₛ·g·r) = √(0.60 × 9.8 × 50) = √294 ≈ 17.1 m/s.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-18",
+      "courseId": "ap-physics-1",
+      "unit": "Simple Harmonic Motion",
+      "title": "Mass on a spring",
+      "difficulty": 2,
+      "scenario": "A 0.50 kg mass oscillates on a spring with k = 200 N/m and amplitude 0.10 m on a frictionless surface.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the period of oscillation.", "modelAnswer": "T = 2π√(m/k) = 2π√(0.50/200) = 2π(0.050) ≈ 0.314 s.", "points": 3 },
+        { "label": "Part (b)", "text": "Find the maximum speed of the mass.", "modelAnswer": "ω = √(k/m) = √400 = 20 rad/s. v_max = A·ω = 0.10 × 20 = 2.0 m/s.", "points": 2 }
+      ]
+    },
+    {
       "id": "frq-5",
       "courseId": "ap-physics-2",
       "unit": "Fluids",
       "title": "Pressure at depth in a tank",
+      "difficulty": 2,
       "scenario": "A water tank is open to the atmosphere. Water density ρ = 1000 kg/m³ and P₀ = 1.0×10⁵ Pa.",
       "parts": [
         { "label": "Part (a)", "text": "Find the absolute pressure 3.0 m below the surface.", "modelAnswer": "P = P₀ + ρ·g·h = 1.0×10⁵ + 1000 × 9.8 × 3.0 = 1.29×10⁵ Pa.", "points": 3 },
@@ -62,6 +91,7 @@
       "courseId": "ap-physics-2",
       "unit": "Thermodynamics",
       "title": "Heating a gas at constant volume",
+      "difficulty": 2,
       "scenario": "2.0 mol of an ideal gas is held in a rigid container and 500 J of heat is added.",
       "parts": [
         { "label": "Part (a)", "text": "How much work does the gas do on its surroundings?", "modelAnswer": "Constant volume → ΔV = 0, so W = 0. The gas does no work.", "points": 2 },
@@ -73,6 +103,7 @@
       "courseId": "ap-physics-2",
       "unit": "Electrostatics",
       "title": "Force between two point charges",
+      "difficulty": 1,
       "scenario": "Two point charges, q₁ = +3.0 µC and q₂ = −5.0 µC, are 0.20 m apart. k = 8.99×10⁹ N·m²/C².",
       "parts": [
         { "label": "Part (a)", "text": "Calculate the magnitude of the electric force between them.", "modelAnswer": "F = k·|q₁·q₂|/r² = 8.99×10⁹ × (3.0×10⁻⁶)(5.0×10⁻⁶)/0.20² ≈ 3.37 N.", "points": 3 },
@@ -80,10 +111,35 @@
       ]
     },
     {
+      "id": "frq-19",
+      "courseId": "ap-physics-2",
+      "unit": "Circuits",
+      "title": "Series resistor circuit",
+      "difficulty": 2,
+      "scenario": "A 12 V battery is connected to a 4.0 Ω resistor and an 8.0 Ω resistor in series.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the current through the circuit.", "modelAnswer": "R_series = 4.0 + 8.0 = 12 Ω. I = V/R = 12/12 = 1.0 A.", "points": 2 },
+        { "label": "Part (b)", "text": "Find the power dissipated in the 8.0 Ω resistor.", "modelAnswer": "P = I²R = (1.0)² × 8.0 = 8.0 W.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-20",
+      "courseId": "ap-physics-2",
+      "unit": "Magnetism",
+      "title": "Charged particle in a magnetic field",
+      "difficulty": 2,
+      "scenario": "A proton (q = 1.6×10⁻¹⁹ C, m = 1.67×10⁻²⁷ kg) moves at 2.0×10⁶ m/s perpendicular to a 0.50 T magnetic field.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the magnitude of the magnetic force on the proton.", "modelAnswer": "F = q·v·B = (1.6×10⁻¹⁹)(2.0×10⁶)(0.50) = 1.6×10⁻¹³ N.", "points": 2 },
+        { "label": "Part (b)", "text": "Calculate the radius of its circular path.", "modelAnswer": "r = m·v/(q·B) = (1.67×10⁻²⁷)(2.0×10⁶)/((1.6×10⁻¹⁹)(0.50)) ≈ 0.042 m.", "points": 3 }
+      ]
+    },
+    {
       "id": "frq-8",
       "courseId": "ap-physics-c",
       "unit": "Mechanics · Work & Energy",
       "title": "Work done by a variable force",
+      "difficulty": 3,
       "scenario": "A force F(x) = 6x (in newtons, x in meters) acts on a 2.0 kg object moving along the x-axis from x = 0 to x = 3.0 m, starting from rest.",
       "parts": [
         { "label": "Part (a)", "text": "Find the work done by the force over this interval.", "modelAnswer": "W = ∫₀³ 6x dx = 3x² |₀³ = 3(9) = 27 J.", "points": 3 },
@@ -95,6 +151,7 @@
       "courseId": "ap-physics-c",
       "unit": "Mechanics · Rotation",
       "title": "Torque and angular acceleration of a disk",
+      "difficulty": 2,
       "scenario": "A uniform solid disk (I = ½·M·R²) has M = 3.0 kg and R = 0.40 m. A constant tangential force of 12 N is applied at its rim.",
       "parts": [
         { "label": "Part (a)", "text": "Find the moment of inertia and the net torque about the center.", "modelAnswer": "I = ½ × 3.0 × 0.40² = 0.24 kg·m². τ = R·F = 0.40 × 12 = 4.8 N·m.", "points": 3 },
@@ -102,14 +159,99 @@
       ]
     },
     {
+      "id": "frq-11",
+      "courseId": "ap-physics-c",
+      "unit": "Mechanics · Rotation",
+      "title": "Solid sphere rolling down an incline",
+      "difficulty": 3,
+      "scenario": "A uniform solid sphere (I = ⅖·M·R²) rolls without slipping from rest down an incline, descending a vertical height h = 2.0 m. Take g = 9.8 m/s².",
+      "parts": [
+        { "label": "Part (a)", "text": "Using energy conservation with the rolling constraint, derive the speed at the bottom.", "modelAnswer": "M·g·h = ½·M·v² + ½·I·ω², with ω = v/R and I = ⅖MR². This gives M·g·h = ½Mv² + ⅕Mv² = 7/10·M·v² → v = √(10·g·h/7).", "points": 3 },
+        { "label": "Part (b)", "text": "Evaluate the speed for h = 2.0 m.", "modelAnswer": "v = √(10 × 9.8 × 2.0 / 7) = √28 ≈ 5.3 m/s.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-12",
+      "courseId": "ap-physics-c",
+      "unit": "Mechanics · Angular Momentum",
+      "title": "Disk dropped onto a spinning disk",
+      "difficulty": 3,
+      "scenario": "A disk with I₁ = 4.0 kg·m² spins freely at ω₁ = 3.0 rad/s. A second, non-rotating disk with I₂ = 2.0 kg·m² is dropped coaxially onto it and they rotate together.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the final common angular velocity.", "modelAnswer": "Conserve angular momentum: I₁ω₁ = (I₁+I₂)ω → ω = (4.0×3.0)/(6.0) = 2.0 rad/s.", "points": 3 },
+        { "label": "Part (b)", "text": "How much rotational kinetic energy is lost?", "modelAnswer": "K_i = ½·4.0·3.0² = 18 J; K_f = ½·6.0·2.0² = 12 J. Lost = 6.0 J (to friction between disks).", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-21",
+      "courseId": "ap-physics-c",
+      "unit": "Mechanics · Oscillations",
+      "title": "SHM from a position function",
+      "difficulty": 3,
+      "scenario": "A particle undergoes simple harmonic motion described by x(t) = 0.05·cos(10t), with x in meters and t in seconds.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find v(t) and a(t) by differentiation.", "modelAnswer": "v = dx/dt = −0.50·sin(10t) m/s; a = dv/dt = −5.0·cos(10t) m/s².", "points": 3 },
+        { "label": "Part (b)", "text": "State the maximum speed and maximum acceleration.", "modelAnswer": "v_max = 0.50 m/s; a_max = 5.0 m/s² (= ω²·A = 100 × 0.05).", "points": 3 }
+      ]
+    },
+    {
       "id": "frq-10",
       "courseId": "ap-physics-c",
       "unit": "E&M · Gauss's Law",
       "title": "Field of a charged sphere",
+      "difficulty": 3,
       "scenario": "A solid insulating sphere of radius R carries total charge Q uniformly distributed. Use Gauss's law.",
       "parts": [
         { "label": "Part (a)", "text": "Derive the electric field outside the sphere (r > R).", "modelAnswer": "By symmetry E·4πr² = Q/ε₀ → E = Q / (4π·ε₀·r²) = k·Q/r², directed radially.", "points": 3 },
         { "label": "Part (b)", "text": "Derive the electric field inside the sphere (r < R).", "modelAnswer": "Enclosed charge q = Q·(r³/R³). E·4πr² = q/ε₀ → E = k·Q·r / R³, radially outward.", "points": 4 }
+      ]
+    },
+    {
+      "id": "frq-13",
+      "courseId": "ap-physics-c",
+      "unit": "E&M · RC Circuits",
+      "title": "Charging an RC circuit",
+      "difficulty": 3,
+      "scenario": "A 12 V battery charges a capacitor C = 100 µF through a resistor R = 1000 Ω, starting from an uncharged capacitor.",
+      "parts": [
+        { "label": "Part (a)", "text": "Find the time constant and the initial current.", "modelAnswer": "τ = RC = 1000 × 100×10⁻⁶ = 0.10 s. Initial current I₀ = V/R = 12/1000 = 0.012 A.", "points": 2 },
+        { "label": "Part (b)", "text": "Find the charge on the capacitor after one time constant.", "modelAnswer": "Q(t) = CV(1 − e^(−t/τ)). Q_max = CV = 12×100×10⁻⁶ = 1.2×10⁻³ C. Q(τ) = 1.2×10⁻³(1 − e⁻¹) ≈ 1.2×10⁻³(0.632) ≈ 7.6×10⁻⁴ C.", "points": 3 }
+      ]
+    },
+    {
+      "id": "frq-16",
+      "courseId": "ap-physics-c",
+      "unit": "E&M · Capacitance",
+      "title": "Parallel-plate capacitor energy",
+      "difficulty": 2,
+      "scenario": "A parallel-plate capacitor has plate area A = 0.010 m² and separation d = 1.0 mm with vacuum between the plates. Use ε₀ = 8.85×10⁻¹² F/m.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the capacitance.", "modelAnswer": "C = ε₀·A/d = 8.85×10⁻¹² × 0.010 / 0.0010 ≈ 8.85×10⁻¹¹ F.", "points": 3 },
+        { "label": "Part (b)", "text": "Find the energy stored when charged to 100 V.", "modelAnswer": "U = ½·C·V² = ½ × 8.85×10⁻¹¹ × (100)² ≈ 4.4×10⁻⁷ J.", "points": 2 }
+      ]
+    },
+    {
+      "id": "frq-14",
+      "courseId": "ap-physics-c",
+      "unit": "E&M · Ampère's Law",
+      "title": "Magnetic field inside a solenoid",
+      "difficulty": 3,
+      "scenario": "A long solenoid has n = 1000 turns per meter and carries current I = 2.0 A. Use μ₀ = 4π×10⁻⁷ T·m/A.",
+      "parts": [
+        { "label": "Part (a)", "text": "Use Ampère's law to derive the field inside a long solenoid.", "modelAnswer": "Apply ∮B·dl = μ₀·I_enc to a rectangular loop of length L partly inside: B·L = μ₀·(n·L)·I → B = μ₀·n·I (uniform, along the axis; field outside ≈ 0).", "points": 4 },
+        { "label": "Part (b)", "text": "Evaluate the field magnitude.", "modelAnswer": "B = (4π×10⁻⁷)(1000)(2.0) ≈ 2.5×10⁻³ T.", "points": 2 }
+      ]
+    },
+    {
+      "id": "frq-15",
+      "courseId": "ap-physics-c",
+      "unit": "E&M · Faraday's Law",
+      "title": "Induced EMF in a shrinking field",
+      "difficulty": 3,
+      "scenario": "A coil of N = 50 turns encloses an area A = 0.020 m². A uniform magnetic field perpendicular to the coil decreases steadily from 0.50 T to 0 in 0.10 s.",
+      "parts": [
+        { "label": "Part (a)", "text": "Calculate the magnitude of the induced EMF.", "modelAnswer": "|ε| = N·|ΔΦ/Δt| = N·A·|ΔB/Δt| = 50 × 0.020 × (0.50/0.10) = 5.0 V.", "points": 3 },
+        { "label": "Part (b)", "text": "Use Lenz's law to state the direction of the induced current.", "modelAnswer": "The flux is decreasing, so the induced current flows to oppose the decrease — it circulates to maintain the original field direction (i.e., in the sense that reinforces B through the coil).", "points": 2 }
       ]
     }
   ]
