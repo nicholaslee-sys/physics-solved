@@ -1,0 +1,90 @@
+{
+  "course": "ap-chemistry",
+  "title": "AP Chemistry Formula Sheet",
+  "tagline": "Stoichiometry through electrochemistry, on one page.",
+  "constants": [
+    { "sym": "R", "value": "0.08206 L·atm/(mol·K)" },
+    { "sym": "R", "value": "8.314 J/(mol·K)" },
+    { "sym": "N_A", "value": "6.022×10²³ mol⁻¹" },
+    { "sym": "F", "value": "96485 C/mol" },
+    { "sym": "h", "value": "6.626×10⁻³⁴ J·s" },
+    { "sym": "c", "value": "3.00×10⁸ m/s" },
+    { "sym": "K_w", "value": "1.0×10⁻¹⁴ (25 °C)" }
+  ],
+  "categories": [
+    {
+      "title": "Stoichiometry & Moles",
+      "rows": [
+        { "name": "Moles from mass", "expr": "n = m / M" },
+        { "name": "Particle count", "expr": "N = n · N_A" },
+        { "name": "Molarity", "expr": "c = n / V" },
+        { "name": "Dilution", "expr": "c₁V₁ = c₂V₂" }
+      ]
+    },
+    {
+      "title": "Gases",
+      "rows": [
+        { "name": "Ideal gas law", "expr": "PV = nRT" },
+        { "name": "Dalton's law", "expr": "P_total = ΣP_i" },
+        { "name": "Partial pressure", "expr": "P_i = X_i · P_total" },
+        { "name": "Gas density", "expr": "D = PM / RT" }
+      ]
+    },
+    {
+      "title": "Thermochemistry",
+      "rows": [
+        { "name": "Calorimetry", "expr": "q = m·c·ΔT" },
+        { "name": "Heat from moles", "expr": "q = n·ΔH" },
+        { "name": "Hess's law", "expr": "ΔH°rxn = ΣΔHf(prod) − ΣΔHf(react)" },
+        { "name": "Gibbs free energy", "expr": "ΔG = ΔH − TΔS" }
+      ]
+    },
+    {
+      "title": "Atomic Structure & Light",
+      "rows": [
+        { "name": "Photon energy", "expr": "E = hν" },
+        { "name": "Wave relationship", "expr": "c = λν" },
+        { "name": "Energy & wavelength", "expr": "E = hc / λ" },
+        { "name": "Beer–Lambert law", "expr": "A = ε·b·C" }
+      ]
+    },
+    {
+      "title": "Kinetics",
+      "rows": [
+        { "name": "Zero order", "expr": "[A]t = −kt + [A]₀" },
+        { "name": "First order", "expr": "ln[A]t = −kt + ln[A]₀" },
+        { "name": "Second order", "expr": "1/[A]t = kt + 1/[A]₀" },
+        { "name": "First-order half-life", "expr": "t½ = 0.693 / k" },
+        { "name": "Arrhenius", "expr": "ln k = −(Ea/R)(1/T) + ln A" }
+      ]
+    },
+    {
+      "title": "Equilibrium",
+      "rows": [
+        { "name": "Equilibrium constant", "expr": "K = [products] / [reactants]" },
+        { "name": "Kp from Kc", "expr": "Kp = Kc(RT)^Δn" },
+        { "name": "Free energy & K", "expr": "ΔG° = −RT ln K" }
+      ]
+    },
+    {
+      "title": "Acids & Bases",
+      "rows": [
+        { "name": "pH", "expr": "pH = −log[H⁺]" },
+        { "name": "pOH", "expr": "pOH = −log[OH⁻]" },
+        { "name": "Water", "expr": "pH + pOH = 14" },
+        { "name": "Kw", "expr": "Kw = [H⁺][OH⁻] = Ka·Kb" },
+        { "name": "Henderson–Hasselbalch", "expr": "pH = pKa + log([A⁻]/[HA])" }
+      ]
+    },
+    {
+      "title": "Electrochemistry",
+      "rows": [
+        { "name": "Free energy & E°", "expr": "ΔG° = −nFE°" },
+        { "name": "Cell potential", "expr": "E°cell = E°cathode − E°anode" },
+        { "name": "Nernst", "expr": "E = E° − (RT/nF) ln Q" },
+        { "name": "Nernst (25 °C)", "expr": "E = E° − (0.0592/n) log Q" },
+        { "name": "Charge", "expr": "q = I·t" }
+      ]
+    }
+  ]
+}
