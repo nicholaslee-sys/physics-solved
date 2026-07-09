@@ -1,12 +1,14 @@
 <!-- ============================================================
      PHYSICS SOLVED — SITE HEADER INJECTION
      Paste into: Settings → Advanced → Code Injection → HEADER
-     CDN bundle for github.com/nicholaslee-sys/physics-solved (tag v1).
+     CDN bundle for github.com/nicholaslee-sys/physics-solved (tag v2).
      Loads the one shared CSS + JS bundle from jsDelivr for every page.
      Each page section is wrapped in .ps-root by its own snippet, so the
      design tokens never leak into your Squarespace theme.
+     Dev tip: swap @v2 for @main to preview unreleased changes.
      ============================================================ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nicholaslee-sys/physics-solved@v1/dist/physics-solved.min.css">
-<script defer src="https://cdn.jsdelivr.net/gh/nicholaslee-sys/physics-solved@v1/dist/physics-solved.min.js"></script>
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/nicholaslee-sys/physics-solved@v2/dist/physics-solved.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nicholaslee-sys/physics-solved@v2/dist/physics-solved.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/nicholaslee-sys/physics-solved@v2/dist/physics-solved.min.js"></script>

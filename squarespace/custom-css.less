@@ -1,0 +1,309 @@
+/* ============================================================
+   PHYSICS SOLVED — Squarespace Custom CSS (FULL REPLACEMENT)
+   Paste into: Design → Custom CSS  (replace everything there).
+
+   This is the ONLY place theme-chrome (header, nav, sections,
+   footer, buttons) is styled. The interactive tools style
+   themselves from the CDN bundle under .ps-root — nothing here
+   should reach inside .ps-root, and a reset at the bottom makes
+   sure of it.
+
+   ⚠️ LESS PITFALL — Squarespace compiles Custom CSS as LESS, so a
+   bare "/" is read as DIVISION. NEVER write:
+        grid-column: 1 / -1;      // LESS computes 1 / -1 = -1  💥
+        aspect-ratio: 16 / 9;     // becomes 1.777…            💥
+        font: 15px / 1.5 Inter;   // shorthand slash breaks     💥
+   Use the longhands / escaped forms instead:
+        grid-column-start: 1;  grid-column-end: -1;
+        aspect-ratio: ~"16 / 9";
+        font-size: 15px; line-height: 1.5;
+   (This file deliberately uses no "/" in any property value.)
+
+   Brand tokens (mirrors the CDN token file):
+     ink #101426 · off-white #fafaf8 · surface #fff
+     primary blue #2547d0 (hover #1c38a8) · muted #5a6072
+     hairline #e5e7ee · display serif "Crimson Pro"
+   The old navy #1a3a6e / gold #c8a25b / orange headings are GONE —
+   they simply aren't declared here, and the overrides below undo
+   them where the theme still applies them.
+   ============================================================ */
+
+:root {
+  --ps-ink: #101426;
+  --ps-bg: #fafaf8;
+  --ps-surface: #ffffff;
+  --ps-accent: #2547d0;
+  --ps-accent-hover: #1c38a8;
+  --ps-muted: #5a6072;
+  --ps-hairline: #e5e7ee;
+  --ps-display: "Crimson Pro", Georgia, "Times New Roman", serif;
+}
+
+/* ===========================================================
+   0 · KILL THE WASHED-OUT FIRST PAINT
+   The half-transparent wordmark fade-in and section load fades
+   cause the ghosted header. The real fix is Site Styles →
+   Animations → None (see the checklist); these rules are the
+   belt-and-braces so nothing ever renders below full opacity.
+   =========================================================== */
+.header-title-text a,
+.header-title-logo img,
+[data-animation-role="header-element"] {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* ===========================================================
+   1 · HEADER + WORDMARK
+   Crisp, full-contrast serif wordmark. Sticky with a hairline
+   rule (replaces the heavy navy border line).
+   =========================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--ps-bg);
+  border-bottom: 1px solid var(--ps-hairline);
+  -webkit-backdrop-filter: saturate(1.1) blur(6px);
+  backdrop-filter: saturate(1.1) blur(6px);
+}
+
+.header-title-text a {
+  font-family: var(--ps-display) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em;
+  color: var(--ps-ink) !important;
+  text-transform: none;
+}
+
+/* ===========================================================
+   2 · PRIMARY NAVIGATION (desktop)
+   Real links, quiet by default, blue on hover / active. Works
+   for top-level links and for the Physics ▾ / Chemistry ▾ folders.
+   =========================================================== */
+.header-nav-item a,
+.header-nav-folder-title {
+  font-family: "Inter", Helvetica, Arial, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px;
+  color: var(--ps-ink) !important;
+  transition: color 140ms cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.header-nav-item a:hover,
+.header-nav-folder-title:hover,
+.header-nav-item--active a {
+  color: var(--ps-accent) !important;
+}
+
+/* Underline grows on hover / active — no layout shift. */
+.header-nav-item a {
+  position: relative;
+  padding-bottom: 2px;
+}
+.header-nav-item a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--ps-accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 160ms cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.header-nav-item a:hover:after,
+.header-nav-item--active a:after {
+  transform: scaleX(1);
+}
+
+/* Folder dropdown (Physics / Chemistry menus) */
+.header-nav-folder-content {
+  background: var(--ps-surface);
+  border: 1px solid var(--ps-hairline);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(16, 20, 38, 0.1);
+  padding: 6px;
+}
+.header-nav-folder-item a {
+  border-radius: 7px;
+  padding: 8px 12px;
+}
+.header-nav-folder-item a:hover {
+  background: rgba(37, 71, 208, 0.08);
+}
+/* "IB soon" style muted item — add the class name "is-soon" to the
+   folder link in the nav (or name the page "IB Chemistry (soon)"). */
+.header-nav-folder-item.is-soon a,
+.header-nav-item.is-soon a {
+  color: var(--ps-muted) !important;
+  pointer-events: none;
+  cursor: default;
+}
+.header-nav-folder-item.is-soon a:after,
+.header-nav-item.is-soon a:after { display: none; }
+
+/* ===========================================================
+   3 · MOBILE MENU OVERLAY
+   Full-screen sheet: off-white, large tappable links (≥44px),
+   blue on tap.
+   =========================================================== */
+.header-menu {
+  background: var(--ps-bg) !important;
+}
+.header-menu-nav-item a {
+  font-family: var(--ps-display) !important;
+  font-weight: 600 !important;
+  font-size: 30px !important;
+  color: var(--ps-ink) !important;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.header-menu-nav-item a:hover,
+.header-menu-nav-item--active a {
+  color: var(--ps-accent) !important;
+}
+.header-menu-nav-folder-content .header-menu-nav-item a {
+  font-family: "Inter", Helvetica, Arial, sans-serif !important;
+  font-size: 19px !important;
+}
+.header-burger-inner,
+.header-burger-inner:before,
+.header-burger-inner:after {
+  background: var(--ps-ink) !important;
+}
+
+/* ===========================================================
+   4 · SECTIONS — one canvas, no gray voids
+   Replace the flat gray backdrops with the off-white token, and
+   alternate white / off-white bands to separate sections instead
+   of dead vertical space. Set real section heights in the editor
+   (checklist) — these just standardize color + trim padding.
+   =========================================================== */
+.page-section .section-background {
+  background-color: var(--ps-bg) !important;
+}
+.page-section:nth-of-type(even) .section-background {
+  background-color: var(--ps-surface) !important;
+}
+
+/* Trim the huge default vertical padding so tools don't float in
+   emptiness. (Whole-number percentages — no slashes.) */
+.page-section {
+  min-height: 0 !important;
+}
+
+/* Optional hard clamp for a specific over-tall section: copy its
+   data-section-id from the editor and uncomment.
+.page-section[data-section-id="PASTE-ID-HERE"] {
+  min-height: 60px !important;
+}
+*/
+
+/* ===========================================================
+   5 · NATIVE HEADINGS + TEXT
+   Section H2s use the display serif in ink (the ONE place serif
+   is allowed besides the wordmark). Everything else stays Inter.
+   Undoes the old orange headings.
+   =========================================================== */
+h1, h2, h3, h4,
+.sqsrte h1, .sqsrte h2, .sqsrte h3, .sqsrte h4 {
+  color: var(--ps-ink);
+}
+h2, .sqsrte h2 {
+  font-family: var(--ps-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.sqsrte a {
+  color: var(--ps-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.sqsrte a:hover {
+  color: var(--ps-accent-hover);
+}
+
+/* ===========================================================
+   6 · BUTTONS (native Squarespace button blocks)
+   Match the tool button: blue primary, ink hover.
+   =========================================================== */
+.sqs-block-button-element,
+.sqs-block-button-element--medium,
+.sqs-block-button-element--large,
+.sqs-block-button-element--small {
+  background-color: var(--ps-accent) !important;
+  border-color: var(--ps-accent) !important;
+  color: #ffffff !important;
+  border-radius: 7px !important;
+  font-family: "Inter", Helvetica, Arial, sans-serif !important;
+  font-weight: 600 !important;
+  transition: background-color 140ms cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.sqs-block-button-element:hover {
+  background-color: var(--ps-accent-hover) !important;
+  border-color: var(--ps-accent-hover) !important;
+}
+
+/* ===========================================================
+   7 · FOOTER
+   Off-white canvas, hairline top rule, thin copyright bar. The
+   three-column layout + links are built in the editor (checklist);
+   this styles the shell + tagline.
+   =========================================================== */
+#footer-sections,
+.footer-sections {
+  background: var(--ps-bg) !important;
+  border-top: 1px solid var(--ps-hairline);
+}
+/* Modest serif tagline — add the class "ps-footer-tagline" to the
+   tagline text block (or it applies to a footer H3). */
+.ps-footer-tagline,
+#footer-sections h3 {
+  font-family: var(--ps-display) !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  color: var(--ps-ink) !important;
+  letter-spacing: -0.01em;
+}
+#footer-sections p,
+.footer-sections p {
+  color: var(--ps-muted);
+  font-size: 14px;
+}
+#footer-sections a {
+  color: var(--ps-muted);
+  text-decoration: none;
+}
+#footer-sections a:hover {
+  color: var(--ps-accent);
+}
+
+/* ===========================================================
+   8 · SAFETY RESET — never leak into the interactive tools
+   The CDN bundle owns everything under .ps-root. Re-assert its
+   fonts so the global heading/button rules above can't bleed in.
+   =========================================================== */
+.ps-root h1,
+.ps-root h2,
+.ps-root h3,
+.ps-root h4 {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  color: inherit;
+  letter-spacing: normal;
+}
+.ps-root .ps-hero-title { font-family: var(--ps-display); }
+.ps-root a { text-decoration: none; }
+
+/* ===========================================================
+   8 · EMBEDDED TOOLS SPAN THE FULL SECTION WIDTH
+   The code blocks live in half-width Fluid Engine grid cells;
+   without this the carousels/tools sit off-center.
+   (Longhands on purpose — see the LESS pitfall note up top.)
+   =========================================================== */
+.fluid-engine .fe-block:has(.ps-root) {
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+}

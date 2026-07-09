@@ -1,15 +1,19 @@
 <!-- ============================================================
      PHYSICS SOLVED — HOME page, "FRQ Practice" section.
-     Add a Code block here and paste this in. Filters come from
-     registry.json; questions come from data/frq/physics.json.
+     Add a Code block here and paste this in. data-subjects shows a
+     subject switcher (Physics / Chemistry); filters come from registry.json.
+     To enable optional AI grading, add:
+        data-grader-endpoint="https://ps-grader.YOURNAME.workers.dev"
+     (see worker/README.md — OFF by default; no key ships to the browser).
      ============================================================ -->
 <div class="ps-root">
-  <section class="ps-section">
+  <section class="ps-section" id="ps-frq">
     <div class="ps-section-head">
       <div class="ps-eyebrow">Practice</div>
-      <h2 class="ps-h2">Free-Response Practice</h2>
-      <p>Work a problem part by part, then check against the model answer.</p>
+      <h1 class="ps-h2">Physics &amp; Chemistry Free-Response (FRQ) Practice</h1>
+      <p>Work AP Physics and AP Chemistry free-response questions part by part, then check against worked model answers. Your progress is saved on this device.</p>
     </div>
-    <div data-ps-app="frq"></div>
+    <div data-ps-app="frq" data-subjects="physics,chemistry"></div>
+    <noscript>Free-response practice with model answers for AP Physics and AP Chemistry. Enable JavaScript to answer and self-check.</noscript>
   </section>
 </div>
