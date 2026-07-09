@@ -1,47 +1,76 @@
 {
-  "_note": "PLACEHOLDER projects — edit freely. tags may include any of: 'engineering', 'coding', 'physics-tools'. featured:true renders the card larger. images is an array of URLs (leave [] to use a generated gradient cover).",
-  "intro": "Engineering and software projects — plus the physics study tools that power this site.",
+  "_note": "EDIT-ME placeholders. tags: 'engineering' | 'coding' | 'physics-tools'. featured:true renders larger. Replace owner and every project marked EDIT-ME with your real details. images:[] uses a generated gradient cover.",
+  "owner": "Nicholas Lee",
+  "intro": "Engineering and software projects — plus the design system and data-driven tools that power this site.",
   "projects": [
     {
-      "id": "proj-cansat",
-      "title": "CanSat Telemetry System",
-      "tags": ["engineering", "coding"],
-      "year": 2025,
-      "summary": "A soda-can-sized satellite that logs altitude, pressure, and temperature during descent and radios live telemetry to a ground station.",
-      "description": "Designed and built the avionics stack for a CanSat competition entry. A microcontroller samples a barometric pressure sensor and IMU at 10 Hz, timestamps each reading, and transmits packets over a 433 MHz radio link. A Python ground-station dashboard plots altitude and vertical speed in real time and writes a CSV flight log. Recovered clean descent-rate data across three test drops. (Replace this description with your own project write-up.)",
-      "tech": ["C++", "Arduino", "Python", "matplotlib", "KiCad"],
+      "id": "physics-solved",
+      "title": "Physics Solved — design system & data-driven tools",
+      "tags": ["coding", "physics-tools"],
+      "year": 2026,
+      "summary": "The vanilla-JS component library and design system behind this site: equation finders, formula sheets, FRQ practice, a periodic table, and calculators — all configured from JSON.",
+      "description": "A zero-dependency (ES2020) front-end bundle served to a Squarespace site via jsDelivr. A tiny core scans the page for [data-ps-app] mounts and renders components from JSON in /data; registry.json is the single source of truth, so adding a course or subject never requires JS edits. Fully scoped .ps-* styles, WCAG AA contrast, keyboard support, prefers-reduced-motion, printable formula sheets, JSON-LD for SEO, and a build that concatenates to two CDN files.",
+      "tech": ["JavaScript (ES2020)", "CSS", "esbuild", "jsDelivr", "Cloudflare Workers"],
       "links": [
-        { "label": "GitHub", "url": "https://github.com/USER/cansat" },
+        { "label": "Live site", "url": "https://physicssolved.com" },
+        { "label": "GitHub", "url": "https://github.com/nicholaslee-sys/physics-solved" }
+      ],
+      "images": [],
+      "featured": true
+    },
+    {
+      "id": "edit-me-engineering-1",
+      "title": "EDIT-ME: Engineering Project 1",
+      "tags": ["engineering"],
+      "year": 2025,
+      "summary": "EDIT-ME — one-sentence summary of a hardware/mechanical/electrical project (what it does and the headline result).",
+      "description": "EDIT-ME — describe the design goal, your approach, the tools and analysis you used, and the measured outcome. Replace the tech list and links. Delete this project if you don't need it.",
+      "tech": ["EDIT-ME", "CAD", "Arduino"],
+      "links": [
         { "label": "Write-up", "url": "#" }
       ],
       "images": [],
       "featured": true
     },
     {
-      "id": "proj-physics-solved",
-      "title": "Physics Solved Study Tools",
-      "tags": ["coding", "physics-tools"],
-      "year": 2026,
-      "summary": "The data-driven front-end bundle behind physicssolved.com — equation finder, formula library, FRQ practice, and simulators, all configured from JSON.",
-      "description": "A vanilla-JS component library that mounts interactive study tools onto a Squarespace site from a shared CDN bundle. New courses, formula sheets, and questions are added by editing JSON — no JavaScript changes. Fully scoped CSS, WCAG AA contrast, keyboard and screen-reader support, and a print-optimized formula-sheet mode. (This is a real project on this site — keep or replace as you like.)",
-      "tech": ["JavaScript (ES2020)", "CSS", "esbuild", "jsDelivr"],
-      "links": [
-        { "label": "Live site", "url": "https://physicssolved.com" },
-        { "label": "GitHub", "url": "https://github.com/USER/physics-solved" }
-      ],
-      "images": [],
-      "featured": true
-    },
-    {
-      "id": "proj-motor-dyno",
-      "title": "Brushless Motor Test Bench",
+      "id": "edit-me-engineering-2",
+      "title": "EDIT-ME: Engineering Project 2",
       "tags": ["engineering"],
       "year": 2024,
-      "summary": "A benchtop dynamometer that measures thrust, current, and RPM for small BLDC motors to characterize propeller efficiency.",
-      "description": "Built a load-cell test stand to compare motor/propeller combinations for a drone project. A Hall-effect sensor reads RPM, an INA219 measures current and voltage, and a load cell reads thrust; an Arduino streams the data to a laptop for plotting thrust-vs-power curves. Used the results to pick a combo that improved hover efficiency by roughly 15%. (Replace with your own numbers and details.)",
-      "tech": ["Arduino", "Load cell + HX711", "Python", "Fusion 360"],
+      "summary": "EDIT-ME — short summary of a second engineering project.",
+      "description": "EDIT-ME — full description: the problem, constraints, what you built, and results/metrics.",
+      "tech": ["EDIT-ME"],
       "links": [
-        { "label": "GitHub", "url": "https://github.com/USER/motor-dyno" }
+        { "label": "GitHub", "url": "#" }
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": "edit-me-coding-1",
+      "title": "EDIT-ME: Coding Project 1",
+      "tags": ["coding"],
+      "year": 2025,
+      "summary": "EDIT-ME — one-sentence summary of a software project (app, tool, or library).",
+      "description": "EDIT-ME — describe the stack, the interesting technical problem, and what you shipped. Replace tech and links.",
+      "tech": ["EDIT-ME", "TypeScript", "React"],
+      "links": [
+        { "label": "GitHub", "url": "#" },
+        { "label": "Demo", "url": "#" }
+      ],
+      "images": [],
+      "featured": false
+    },
+    {
+      "id": "edit-me-coding-2",
+      "title": "EDIT-ME: Coding Project 2",
+      "tags": ["coding"],
+      "year": 2024,
+      "summary": "EDIT-ME — short summary of a second coding project.",
+      "description": "EDIT-ME — full description of the second coding project.",
+      "tech": ["EDIT-ME", "Python"],
+      "links": [
+        { "label": "GitHub", "url": "#" }
       ],
       "images": [],
       "featured": false

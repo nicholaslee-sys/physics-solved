@@ -1,0 +1,28 @@
+{
+  "_note": "Searchable physics + chemistry constants. exact:true means the value is exact by SI definition (2019 redefinition); false means measured/rounded. Extend freely.",
+  "constants": [
+    { "symbol": "c", "name": "Speed of light in vacuum", "value": "2.998×10⁸", "units": "m/s", "category": "universal", "exact": true },
+    { "symbol": "G", "name": "Gravitational constant", "value": "6.674×10⁻¹¹", "units": "N·m²/kg²", "category": "universal", "exact": false },
+    { "symbol": "h", "name": "Planck constant", "value": "6.626×10⁻³⁴", "units": "J·s", "category": "quantum", "exact": true },
+    { "symbol": "ħ", "name": "Reduced Planck constant", "value": "1.055×10⁻³⁴", "units": "J·s", "category": "quantum", "exact": false },
+    { "symbol": "k_B", "name": "Boltzmann constant", "value": "1.381×10⁻²³", "units": "J/K", "category": "thermodynamics", "exact": true },
+    { "symbol": "N_A", "name": "Avogadro constant", "value": "6.022×10²³", "units": "mol⁻¹", "category": "chemistry", "exact": true },
+    { "symbol": "R", "name": "Molar gas constant", "value": "8.314", "units": "J/(mol·K)", "category": "chemistry", "exact": true },
+    { "symbol": "R", "name": "Molar gas constant", "value": "0.08206", "units": "L·atm/(mol·K)", "category": "chemistry", "exact": false },
+    { "symbol": "F", "name": "Faraday constant", "value": "96485", "units": "C/mol", "category": "chemistry", "exact": true },
+    { "symbol": "e", "name": "Elementary charge", "value": "1.602×10⁻¹⁹", "units": "C", "category": "electromagnetism", "exact": true },
+    { "symbol": "ε₀", "name": "Vacuum permittivity", "value": "8.854×10⁻¹²", "units": "F/m", "category": "electromagnetism", "exact": false },
+    { "symbol": "μ₀", "name": "Vacuum permeability", "value": "1.257×10⁻⁶", "units": "T·m/A", "category": "electromagnetism", "exact": false },
+    { "symbol": "k_e", "name": "Coulomb constant", "value": "8.988×10⁹", "units": "N·m²/C²", "category": "electromagnetism", "exact": false },
+    { "symbol": "m_e", "name": "Electron mass", "value": "9.109×10⁻³¹", "units": "kg", "category": "atomic", "exact": false },
+    { "symbol": "m_p", "name": "Proton mass", "value": "1.673×10⁻²⁷", "units": "kg", "category": "atomic", "exact": false },
+    { "symbol": "m_n", "name": "Neutron mass", "value": "1.675×10⁻²⁷", "units": "kg", "category": "atomic", "exact": false },
+    { "symbol": "u", "name": "Atomic mass unit", "value": "1.661×10⁻²⁷", "units": "kg", "category": "atomic", "exact": false },
+    { "symbol": "a₀", "name": "Bohr radius", "value": "5.292×10⁻¹¹", "units": "m", "category": "atomic", "exact": false },
+    { "symbol": "R_H", "name": "Rydberg constant", "value": "1.097×10⁷", "units": "m⁻¹", "category": "atomic", "exact": false },
+    { "symbol": "σ", "name": "Stefan–Boltzmann constant", "value": "5.670×10⁻⁸", "units": "W/(m²·K⁴)", "category": "thermodynamics", "exact": false },
+    { "symbol": "g", "name": "Standard gravity", "value": "9.807", "units": "m/s²", "category": "mechanics", "exact": true },
+    { "symbol": "atm", "name": "Standard atmosphere", "value": "1.013×10⁵", "units": "Pa", "category": "thermodynamics", "exact": true },
+    { "symbol": "V_m", "name": "Molar volume of ideal gas (STP)", "value": "22.41", "units": "L/mol", "category": "chemistry", "exact": false }
+  ]
+}

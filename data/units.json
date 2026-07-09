@@ -1,0 +1,96 @@
+{
+  "_note": "Unit conversion data. Each unit's factor converts THAT unit to the quantity's SI base (base = value × factor). Temperature is special-cased in the component (offsets). Extend by adding units or quantities — no JS changes.",
+  "quantities": [
+    {
+      "id": "length", "label": "Length", "base": "m",
+      "units": [
+        { "id": "km", "label": "kilometer (km)", "factor": 1000 },
+        { "id": "m", "label": "meter (m)", "factor": 1 },
+        { "id": "cm", "label": "centimeter (cm)", "factor": 0.01 },
+        { "id": "mm", "label": "millimeter (mm)", "factor": 0.001 },
+        { "id": "um", "label": "micrometer (µm)", "factor": 1e-6 },
+        { "id": "nm", "label": "nanometer (nm)", "factor": 1e-9 },
+        { "id": "angstrom", "label": "ångström (Å)", "factor": 1e-10 },
+        { "id": "mi", "label": "mile (mi)", "factor": 1609.344 },
+        { "id": "ft", "label": "foot (ft)", "factor": 0.3048 },
+        { "id": "in", "label": "inch (in)", "factor": 0.0254 }
+      ]
+    },
+    {
+      "id": "mass", "label": "Mass", "base": "kg",
+      "units": [
+        { "id": "t", "label": "tonne (t)", "factor": 1000 },
+        { "id": "kg", "label": "kilogram (kg)", "factor": 1 },
+        { "id": "g", "label": "gram (g)", "factor": 0.001 },
+        { "id": "mg", "label": "milligram (mg)", "factor": 1e-6 },
+        { "id": "ug", "label": "microgram (µg)", "factor": 1e-9 },
+        { "id": "lb", "label": "pound (lb)", "factor": 0.45359237 },
+        { "id": "u", "label": "atomic mass unit (u)", "factor": 1.66053906660e-27 }
+      ]
+    },
+    {
+      "id": "time", "label": "Time", "base": "s",
+      "units": [
+        { "id": "ns", "label": "nanosecond (ns)", "factor": 1e-9 },
+        { "id": "us", "label": "microsecond (µs)", "factor": 1e-6 },
+        { "id": "ms", "label": "millisecond (ms)", "factor": 0.001 },
+        { "id": "s", "label": "second (s)", "factor": 1 },
+        { "id": "min", "label": "minute (min)", "factor": 60 },
+        { "id": "hr", "label": "hour (hr)", "factor": 3600 },
+        { "id": "day", "label": "day", "factor": 86400 },
+        { "id": "yr", "label": "year (365.25 d)", "factor": 31557600 }
+      ]
+    },
+    {
+      "id": "energy", "label": "Energy", "base": "J",
+      "units": [
+        { "id": "mJ", "label": "millijoule (mJ)", "factor": 0.001 },
+        { "id": "J", "label": "joule (J)", "factor": 1 },
+        { "id": "kJ", "label": "kilojoule (kJ)", "factor": 1000 },
+        { "id": "cal", "label": "calorie (cal)", "factor": 4.184 },
+        { "id": "kcal", "label": "kilocalorie (kcal)", "factor": 4184 },
+        { "id": "eV", "label": "electronvolt (eV)", "factor": 1.602176634e-19 },
+        { "id": "kWh", "label": "kilowatt-hour (kWh)", "factor": 3600000 },
+        { "id": "BTU", "label": "British thermal unit (BTU)", "factor": 1055.06 }
+      ]
+    },
+    {
+      "id": "pressure", "label": "Pressure", "base": "Pa",
+      "units": [
+        { "id": "Pa", "label": "pascal (Pa)", "factor": 1 },
+        { "id": "kPa", "label": "kilopascal (kPa)", "factor": 1000 },
+        { "id": "MPa", "label": "megapascal (MPa)", "factor": 1000000 },
+        { "id": "atm", "label": "atmosphere (atm)", "factor": 101325 },
+        { "id": "bar", "label": "bar", "factor": 100000 },
+        { "id": "mmHg", "label": "mmHg (torr)", "factor": 133.322 },
+        { "id": "psi", "label": "psi", "factor": 6894.757 }
+      ]
+    },
+    {
+      "id": "temperature", "label": "Temperature", "base": "K", "special": "temperature",
+      "units": [
+        { "id": "K", "label": "kelvin (K)" },
+        { "id": "C", "label": "Celsius (°C)" },
+        { "id": "F", "label": "Fahrenheit (°F)" }
+      ]
+    },
+    {
+      "id": "amount", "label": "Amount of substance", "base": "mol",
+      "units": [
+        { "id": "mol", "label": "mole (mol)", "factor": 1 },
+        { "id": "mmol", "label": "millimole (mmol)", "factor": 0.001 },
+        { "id": "umol", "label": "micromole (µmol)", "factor": 1e-6 }
+      ]
+    },
+    {
+      "id": "charge", "label": "Electric charge", "base": "C",
+      "units": [
+        { "id": "C", "label": "coulomb (C)", "factor": 1 },
+        { "id": "mC", "label": "millicoulomb (mC)", "factor": 0.001 },
+        { "id": "uC", "label": "microcoulomb (µC)", "factor": 1e-6 },
+        { "id": "nC", "label": "nanocoulomb (nC)", "factor": 1e-9 },
+        { "id": "e", "label": "elementary charge (e)", "factor": 1.602176634e-19 }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@
     {
       "id": "physics",
       "label": "Physics",
+      "frqFile": "frq/physics.json",
       "courses": [
         {
           "id": "ap-physics-1",
@@ -82,17 +83,21 @@
     {
       "id": "chemistry",
       "label": "Chemistry",
+      "frqFile": "frq/chemistry.json",
       "courses": [
         {
           "id": "ap-chemistry",
           "label": "AP Chemistry",
-          "eyebrow": "Coming soon",
-          "blurb": "Atomic structure, bonding, kinetics, equilibrium, thermodynamics, and electrochemistry.",
-          "url": null,
-          "status": "coming-soon",
+          "eyebrow": "Stoichiometry · Equilibrium · Electrochem",
+          "blurb": "Stoichiometry, gases, thermochemistry, atomic structure, kinetics, equilibrium, acids & bases, and electrochemistry.",
+          "url": "/ap-chemistry",
+          "status": "live",
           "accent": "#8a5a1b",
           "image": null,
-          "features": []
+          "features": ["equation-finder", "sheet", "frq"],
+          "sheets": [
+            { "id": "ap-chemistry", "label": "AP Chemistry", "file": "sheets/ap-chemistry.json" }
+          ]
         },
         {
           "id": "ib-chemistry",
